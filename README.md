@@ -1,2 +1,2 @@
 # zhdebian
-This is created for backup my configuration file of fvwm/debian/linux.
+This is created for backup my configuration files of fvwm/debian/linux.
