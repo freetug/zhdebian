@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+
+
+<head profile="http://gmpg.org/xfn/11">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+
+<title>ViEmu blog  &raquo; Blog Archive   &raquo; ViEmu 3.7 released: finally search offsets, plus support for Xcode 8 and SQL Server 2016</title>
+
+
+
+<meta name="generator" content="WordPress 4.7.19" /> <!-- leave this for stats -->
+
+
+
+<link rel="stylesheet" href="http://www.viemu.com/blog/wp-content/themes/viemu/style.css" type="text/css" media="screen" />
+
+<link rel="stylesheet" href="/viemu-core.css" type="text/css" media="screen" />  <!-- VIEMU STYLING -->
+
+<link rel="alternate" type="application/rss+xml" title="ViEmu blog RSS Feed" href="http://www.viemu.com/blog/feed/" />
+
+<link rel="pingback" href="http://www.viemu.com/blog/xmlrpc.php" />
+
+<script language="JavaScript" type="text/javascript" src="/refercookie.js"> </script>  <!-- VIEMU STYLING -->
+
+
+
+<style type="text/css" media="screen">
+
+
+
+
+</style>
+
+
+
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.viemu.com\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.19"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='https://api.w.org/' href='http://www.viemu.com/blog/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.viemu.com/blog/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.viemu.com/blog/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='ViEmu 3.6 available: support for Visual Studio 2015, Xcode 6.4 and 7.0 beta 5, better % emulation' href='http://www.viemu.com/blog/2015/08/20/viemu-36-available-support-for-visual-studio-2015-xcode-64-and-70-beta-5-better-emulation/' />
+<link rel='next' title='ViEmu 3.7.5: VS 2017, new SQL Server 2016 installer, and Word&#038;Outlook high-DPI support' href='http://www.viemu.com/blog/2017/01/04/viemu-375-vs-2017-new-sql-server-2016-installer-and-wordoutlook-high-dpi-support/' />
+<meta name="generator" content="WordPress 4.7.19" />
+<link rel="canonical" href="http://www.viemu.com/blog/2016/11/08/viemu-37-released-finally-search-offsets-plus-support-for-xcode-8-and-sql-server-2016/" />
+<link rel='shortlink' href='http://www.viemu.com/blog/?p=73' />
+<link rel="alternate" type="application/json+oembed" href="http://www.viemu.com/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.viemu.com%2Fblog%2F2016%2F11%2F08%2Fviemu-37-released-finally-search-offsets-plus-support-for-xcode-8-and-sql-server-2016%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.viemu.com/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.viemu.com%2Fblog%2F2016%2F11%2F08%2Fviemu-37-released-finally-search-offsets-plus-support-for-xcode-8-and-sql-server-2016%2F&#038;format=xml" />
+
+</head>
+
+<!-- HERE STARTS THE VIEMU STYLING ===================================================================== -->
+
+  <body>
+
+    <img style="display: none;" width="0" height="0" src="/img/MainGradient.gif" alt=""/>
+
+
+
+    <center>
+
+      <div id="pageframe">
+
+
+
+        <div id="navbar">
+
+          <a href="http://www.viemu.com">Home</a> |
+
+          <a href="http://www.viemu.com/support.html">Support</a> |
+
+	      <a href="http://www.symnum.com/customer-area">Customer area</a> |
+
+          <a href="http://www.viemu.com/store.html">Store</a> |
+
+          <a href="http://www.viemu.com/forum">Forums</a> |
+
+          <a href="http://www.viemu.com/blog">Blog</a>
+
+        </div>
+
+
+
+        <div class="main-bars">
+
+          <div id="mainframe">
+
+            <div class="main-top"></div>
+
+            <div class="main-top-left"></div>
+
+            <div class="main-top-right"></div>
+
+            <div class="main-top-left2"></div>
+
+            <div class="main-top-right2"></div>
+
+
+
+            <div class="main-gradient"></div>
+
+
+
+            <div class="mainwide">
+
+
+
+              <!-- Main header ==================================================================================================-->
+
+              <table class="main-header" width="100%" cellSpacing="0" cellPadding="0" border="0">
+
+                <tr>
+
+
+
+                  <!-- Margin -->
+
+                  <td width="16px" style="text-align:center;">
+
+                  </td>
+
+
+
+                  <!-- Logo -->
+
+                  <td width="216px" style="text-align:center;">
+
+                      <a href="http://www.viemu.com"><img class="icon" alt="ViEmu" src="/img/LogoShadow.gif"></a>
+
+                      <br/>
+
+                      <div class="logo-text">ViEmu</div>
+
+                  </td>
+
+
+
+                  <!-- Title & tag line -->
+
+                  <td style="text-align:center;">          <!-- Will be about width="468px", but this is the flex part -->
+
+                    <h1 class="main-title"><a style="color: #333333;" href="http://www.viemu.com/blog">ViEmu Blog</a></h1><div>A blog about all things ViEmu</div>
+
+                  </td>
+
+
+
+                  <!-- Mini cheat sheet -->
+
+                  <td width="184px" style="text-align: center; margin: 0px; height: 148px; padding: 0px; font-size: 1.2em;">
+
+                    <div id="topquote">Emulating<br>the one true editor<br>since 2005!</div>
+
+                  </td>
+
+
+
+                  <!-- Margin -->
+
+                  <td width="16px" style="text-align:center;">
+
+                  </td>
+
+
+
+                </tr>
+
+
+
+              </table>
+
+
+
+
+
+              <!-- Main content float left for sidebar afterwards ===============================================================-->
+
+              <div style="float: left; width: 79%;">
+
+
+
+                <!-- Main Inset ===================================================================================================-->
+
+                <div class="main-inset-bars">
+
+                  <div class="main-inset">
+
+<!-- HERE ENDS THE VIEMU STYLING ======================================================================= -->
+
+
+
+<div id="blogbody">
+
+<div id="page">
+
+
+
+<!-- VIEMU
+
+<div id="header">
+
+	<div id="headerimg">
+
+		<h1><a href="http://www.viemu.com/blog/">ViEmu blog</a></h1>
+
+		<div class="description">A blog about all things ViEmu</div>
+
+	</div>
+
+</div>
+
+-->
+
+
+
+<hr />
+
+
+	<div id="content" class="widecolumn">
+
+	
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="http://www.viemu.com/blog/2015/08/20/viemu-36-available-support-for-visual-studio-2015-xcode-64-and-70-beta-5-better-emulation/" rel="prev">ViEmu 3.6 available: support for Visual Studio 2015, Xcode 6.4 and 7.0 beta 5, better % emulation</a></div>
+			<div class="alignright"><a href="http://www.viemu.com/blog/2017/01/04/viemu-375-vs-2017-new-sql-server-2016-installer-and-wordoutlook-high-dpi-support/" rel="next">ViEmu 3.7.5: VS 2017, new SQL Server 2016 installer, and Word&#038;Outlook high-DPI support</a> &raquo;</div>
+			<div style="clear: both;"></div>
+		</div>
+
+		<div class="post" id="post-73">
+			<h2><a href="http://www.viemu.com/blog/2016/11/08/viemu-37-released-finally-search-offsets-plus-support-for-xcode-8-and-sql-server-2016/" rel="bookmark" title="Permanent Link: ViEmu 3.7 released: finally search offsets, plus support for Xcode 8 and SQL Server 2016">ViEmu 3.7 released: finally search offsets, plus support for Xcode 8 and SQL Server 2016</a></h2>
+
+			<div class="entry">
+				<p>Hello everyone, ViEmu 3.7 is finally ready and available from download from <a href="http://www.viemu.com">http://www.viemu.com</a>. As the major improvements, all ViEmu editions now support the full vi/vim search offsets syntax and semantics: for example, you can add &#8220;/e+1&#8221; to the end of a search, and the cursor will move to the next character after the match. Even multiple-step searches work: &#8220;/abc/+10;?def?e+1&#8221; is a single search involving the following steps: search forward for &#8216;abc&#8217;, go to the first column 10 lines below the match, search backwards for &#8216;def&#8217;, then position the cursor in the character right after the &#8216;f&#8217;.</p>
+<p><span style="font-size: 1em">This version also adds support for Xcode 8 and for SQL Server 2016, both of which have required quite a lot of work.  It </span>also<span style="font-size: 1em"> has had work done to ensure ViEmu for Visual Studio works better with Visual Assist. Head to the ViEmu home page to download them:</span></p>
+<p><a href="http://www.viemu.com">http://www.viemu.com</a></p>
+<p>In order to use them, you need support active as of November 1, 2016. If your support has expired and you want to use the new versions, you will need to visit the <a href="http://symnum.com/customer-area">customer area</a> and renew support, which will allow you to use these versions and any new ones released during one year from now.</p>
+<p>Hope you enjoy it!</p>
+<p><em>(And now off to checking how ViEmu works with the latest VS15 preview&#8230;)</em></p>
+
+								
+				<p class="postmetadata alt">
+					<small>
+						This entry was posted
+												on Tuesday, November 8th, 2016 at 11:20 am						and is filed under <a href="http://www.viemu.com/blog/category/misc/" rel="category tag">misc</a>.
+						You can follow any responses to this entry through the <a href="http://www.viemu.com/blog/2016/11/08/viemu-37-released-finally-search-offsets-plus-support-for-xcode-8-and-sql-server-2016/feed/">RSS 2.0</a> feed.
+
+													Both comments and pings are currently closed.
+
+						
+					</small>
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+
+			<!-- If comments are closed. -->
+		<p class="nocomments">Comments are closed.</p>
+
+	
+
+
+	
+	</div>
+
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link somewhere on your blog is the best way; it's our only promotion or advertising. -->
+	<p>
+		ViEmu blog is proudly powered by
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="http://www.viemu.com/blog/feed/">Entries (RSS)</a>
+		and <a href="http://www.viemu.com/blog/comments/feed/">Comments (RSS)</a>.
+		<!-- 22 queries. 0.325 seconds. -->
+	</p>
+</div>
+</div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<script type='text/javascript' src='http://www.viemu.com/blog/wp-includes/js/wp-embed.min.js?ver=4.7.19'></script>
+</div> <!-- blogbody -->
+<!-- HERE STARTS THE VIEMU STYLING ===================================================================== -->
+
+                  </div>
+                </div>
+
+                <div style="height: 10px;">
+                </div>
+
+              </div> <!-- End main content float left -->
+
+
+
+              <!-- Sidebar ======================================================================================================-->
+              <div style="position: relative; width: 20%; margin-right: 1%; float: right; xheight: 2000px; background: url(/img/sidebar-bkg.gif) top repeat-y;">
+
+                  <div style="margin-top: 0px;"><h2 style="margin-top: 0px;">Highlights</h2></div>
+
+                  <div style="margin: 20px 20px 5px 20px; margin-top: 25px; text-align: left;">ViEmu: vi/vim emulation for Visual Studio, Word, Outlook and SQL Server:</div>
+                  <a href="http://www.viemu.com"><img class="icon" style="position: relative; bottom: 0px; margin-top: 15px;" src="/img/LogoShadow.gif" alt="ViEmu"></a>
+
+                  <div style="margin: 20px 20px 5px 20px; margin-top: 25px; text-align: left;">See where ViEmu customers are around the world:</div>
+                  <a href="http://blog.ngedit.com/2007/04/02/viemu-around-the-world/"><img class="icon" style="position: relative; bottom: 0px;" src="/img/minimap-persp.gif" alt="Map of ViEmu customers around the world"></a>
+
+                  <div style="margin: 20px 20px 10px 20px; margin-top: 25px; text-align: left;">Hear what others are saying about ViEmu:</div>
+                  <a href="http://www.viemu.com/viemu-testimonials.html"><img class="icon" style="position: relative; bottom: 0px;" src="/img/mini-collage.gif" alt="ViEmu testimonials"></a>
+
+                  <div style="margin: 25px 20px 5px 20px; text-align: left;">Learn vi/vim easily with this cheat-sheet and tutorial:</div>
+                  <a href="http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html"><img class="icon" src="/img/cheatsheet-rot.gif" alt="Vi/vim Cheat Sheet and Tutorial"></a>
+
+                  <div style="margin: 20px 20px 10px 20px; margin-top: 25px; text-align: left;">Read why vi/vim editing is <em>the killerest</em>:</div>
+                  <a href="http://www.viemu.com/a-why-vi-vim.html"><img class="icon" style="position: relative; bottom: 0px;" src="/img/mini-why-vi.gif" alt="Why vi/vim editing?"></a>
+
+                  <div style="margin: 20px 20px 10px 20px; margin-top: 25px; text-align: left;">Discover ViEmu's sister product, <em>Codekana</em>:</div>
+                  <a href="http://www.codekana.com"><img class="icon" style="position: relative; bottom: 0px;" src="/img/minick.gif" alt="Codekana outliner and syntax highlighter"></a>
+
+                  <p style="line-height: 0px; margin: 0px;"><img class="icon" style="margin-top: 20px; margin-bottom: 0px;" src="/img/highlights-bottom.gif" alt=""></p>
+
+                  <div></div> <!-- IE7 requires this or the image is moved out of the sidebar! -->
+
+              </div>
+
+              <div style="clear: both;"></div>
+
+              <!-- Bottom =======================================================================================================-->
+              <!-- <div align="left">Extra content at the bottom</div> -->
+
+            </div> <!-- mainwide -->
+
+            <div class="copyright">
+              &copy; 2005-2017 <a class="white" href="http://www.symnum.com">Symnum Systems</a>
+            </div>
+
+          </div> <!-- mainframe -->
+        </div> <!-- main-bars -->
+
+        <div style="margin-bottom: 40px;"></div>
+
+      </div> <!-- pageframe -->
+    </center>
+  </body>
+</html>
+<!-- HERE ENDS THE VIEMU STYLING ======================================================================= -->

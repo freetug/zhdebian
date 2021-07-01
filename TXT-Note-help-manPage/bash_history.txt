@@ -1,0 +1,161 @@
+
+ccal -u
+group
+groups
+groups
+shadowsocks
+ccal -u
+ccal -help
+hostname
+nano /etc/lightdm/lightdm-gtk-greeter.conf 
+nano /etc/lightdm/
+aria/usr/bin//etc/init.d/shadowsocks start
+/etc/init.d/shadowsocks stop
+/etc/init.d/shadowsocks start
+sslocal -s 38.141.44.98 -p 7776 -l 1080 -k dongtaiwang.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+sslocal -s 38.141.44.98 -p 7776 -l 1080 -k dongtaiwang.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+sslocal -s 38.141.44.98 -p 80 -l 1080 -k dongtaiwang.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+/etc/init.d/shadowsocks stop
+/etc/init.d/shadowsocks start
+sslocal -s 38.141.44.98 -p 80 -l 1080 -k dongtaiwang.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+sslocal --help
+sslocal -d restart
+sslocal -d stop
+sslocal -s 38.141.44.98 -p 80 -l 1080 -k dongtaiwang.com -t 600 -m aes-256-cfb
+sslocal -s 38.141.44.98 -p 80 -l 1080 -k dongtaiwang.com -t 600 -m aes-256-cfb
+clear
+sslocal -s 38.141.44.98 -p 80 -l 1080 -k dongtaiwang.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+aira2c sslocal -s 38.141.44.98 -p 80 -l 1080 -k dongtaiwang.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &sslocal -s 38.141.44.98 -p 80 -l 1080 -k dongtaiwang.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+dpkg --help
+dpkg --help | more
+dpkg -i net.downloadhelper.coapp-1.2.4-1_amd64.deb 
+sslocal -s 103.114.161.158 -p 666 -l 1080 -k dongtaiwang.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+sslocal -d restart
+sslocal -d stop
+/etc/init.d/shadowsocks stop
+/etc/init.d/shadowsocks startsslocal -s 103.114.161.175 -p 777 -l 1080 -k ntdtv.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+clear
+sslocal -s 103.114.161.175 -p 3456 -l 1080 -k ntdtv.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+sslocal -s 103.114.161.158 -p 6789 -l 1080 -k dongtaiwang.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+sslocal -s 103.114.161.158 -p 6789 -l 1080 -k dongtaiwang.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+vi
+apt-get install google earth
+sslocal -s 103.114.161.158 -p 6789 -l 1080 -k dongtaiwang.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+sslocal -s 103.114.161.158 -p 6789 -l 1080 -k dongtaiwang.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+top
+background
+sslocal -s 103.114.161.158 -p 6789 -l 1080 -k dongtaiwang.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+sslocal -s 103.114.161.175 -p 3456 -l 1080 -k ntdtv.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+sslocal -s 103.114.161.175 -p 3456 -l 1080 -k ntdtv.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+sslocal -s 103.114.161.158 -p 2322 -l 1080 -k dongtaiwang.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &sslocal -s 103.114.161.158 -p 2322 -l 1080 -k dongtaiwang.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+sslocal -s 103.114.161.158 -p 2322 -l 1080 -k dongtaiwang.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &sslocal -s 103.114.161.158 -p 2322 -l 1080 -k dongtaiwang.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+gpaste
+qbittorrent
+smplayer
+caja
+sslocal -s 103.114.161.158 -p 2322 -l 1080 -k dongtaiwang.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &dconf-editor
+mateconf-editor
+sslocal -s 103.114.161.158 -p 2322 -l 1080 -k dongtaiwang.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+which rox
+which telnet
+which amule
+xxditview
+oclock
+xclock -digital -update 1
+xeyes
+xlogo
+xman
+fbrun
+xbindkeys
+xmodmap
+xmodmap -pm
+jobs
+sslocal -s 103.114.161.158 -p 2322 -l 1080 -k dongtaiwang.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+top
+jobs
+sslocal -s 118.103.46.10 -p 1025 -l 1080 -k s26dzx -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+sslocal -s 103.114.161.158 -p 2322 -l 1080 -k dongtaiwang.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+sslocal -s 5p 8340001 -l 1080 -k 5a6C6zW5an 600 -m aes-256-cfb
+sslocal -s 185.136.232.183 -p 40001 -l 1080 -k 6C6zW5an -t 600 -m aes-256-cfb
+sslocal -s 103.114.161.158 -p 2322 -l 1080 -k dongtaiwang.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+sslocal -s 103.114.161.158 -p 6666 -l 1080 -k dongtaiwang.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+sslocal -s 103.114.161.158 -p 4321 -l 1080 -k ntdtv.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+curl --connect-timeout 2 -x 127.0.0.1:8118 http://google.com
+sslocal -s 103.114.161.158 -p 4321 -l 1080 -k ntdtv.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+sslocal -s 103.114.161.158 -p 4321 -l 1080 -k ntdtv.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+sslocal -s jp-v8wd.eimii.xyz -p 546 -l 1080 -k q605I3 -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+fg
+sslocal -s 103.114.161.158 -p 4321 -l 1080 -k ntdtv.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+sslocal -s 103.114.161.158 -p 4321 -l 1080 -k ntdtv.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+sslocal -s 103.114.161.158 -p 6666 -l 1080 -k renminbao.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &sslocal -s 103.114.161.158 -p 6666 -l 1080 -k renminbao.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+which freedownloader
+which freedownload
+find freedownload
+find / freedownload
+sslocal -s 103.114.161.158 -p 6666 -l 1080 -k renminbao.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+sslocal -s 121.196.194.50 -p 443 -l 1080  -t 600 -m auth_aes128_md5 > /dev/null 2>&1 &
+which sslocal
+find sslocal
+sslocal -s 103.114.161.158 -p 6666 -l 1080 -k renminbao.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+sslocal -s 103.114.161.158 -p 23789 -l 1080 -k dongtaiwang.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+cp /home/ml/桌面/txt/* /media/ml/B83A864F3A860B18/
+cp -r /home/ml/桌面/txt/* /media/ml/B83A864F3A860B18/
+sslocal -s 103.114.161.158 -p 23789 -l 1080 -k dongtaiwang.com -t 600 -m aes-256-cfb > /dev/null 2>&1 &
+jobs
+vi ~/.bash_history 
+cp /usr/share/fvwm/default-config/config ~/.fvwm/.fvwm2rc
+vi /home/ml/.fvwm/.fvwm2rc 
+vi /home/ml/.fvwm/cp ~/.fvwm/.fvwm2rc .fvwn2rc.bkup-gd-default
+cp /home/ml/.fvwm/cp ~/.fvwm/.fvwm2rc .fvwn2rc.bkup-gd-default
+cp /home/ml/.fvwm/cp ~/.fvwm/.fvwm2rc ~/.fvwm/.fvwn2rc.bkup-gd-default
+cp ~/.fvwm/.fvwm2rc ~/.fvwm/.fvwn2rc.bkup-gd-default
+cp ~/.fvwm/.fvwm2rc ~/.fvwm/.fvwm2rc ~/.fvwm/2011-u.fvwm2rc
+cp ~/.fvwm/.fvwm2rc ~/.fvwm/.fvwm2rc ~/.fvwm/ 2011-u.fvwm2rc
+cp ~/.fvwm/.fvwm2rc  ~/.fvwm/ 2011-u.fvwm2rc
+cp ~/.fvwm/.fvwm2rc  ~/.fvwm/2011-u.fvwm2rc
+cp ~/.fvwm/.fvwn2rc.bkup-gd-default ~/.fvwm/.fvwm2rc
+vi ~/.fvwm/.fvwm2rc 
+fc-list | grep sans
+fc-list | more
+vi ~/.fvwm/.fvwm2rc 
+exit
+fc-list | grep wqy
+find / icons/apps
+find / icons/apps | grep apps
+chmod
+chmod --helpvi ~/.fvwm/.fvwm2rc vi ~/.fvwm/.fvwm2rc 
+datetime
+date
+time
+xclock -analog
+xclock -digital
+xclock -digital --twentyfour
+xclock -digital -twentyfour ^
+xclock -digital -twentyfour &
+blueman
+uname -a
+ismod
+cat /etc/issue
+eth0
+lshw
+free -m
+man　strftime
+man strftime
+pm-suspend
+hibernate-ramman strftime
+systemctl suspendnm-applet
+xdg-mime default caja.desktop inode/directory application
+gvfs-mime --set inode/directory caja.desktop
+xdg-mime default caja.desktop inode/directory application
+xdg-open $home
+xdg-open $HOME
+pluma ./.local/share/applications/mimeapps.list 
+xdg-mime query default "inode/directory"
+xdg-mime default rox.desktop inode/directory application
+xdg-open $HOME
+blueman
+mate-system-monitor
+xdg-mime query filetype download/
+xdg-mime query default "inode/directory"
+xdg-mime default rox-rox.desktop "inode/directory"
+xdg-mime query default "inode/directory"

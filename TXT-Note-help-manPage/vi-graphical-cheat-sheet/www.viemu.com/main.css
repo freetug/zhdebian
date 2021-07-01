@@ -1,0 +1,570 @@
+
+body {
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family: Verdana, "Trebuchet MS", Helvetica, sans-serif;
+  background-color: #FFFFFF;
+  color: #333333;
+  font-size: 12px;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.main-header {
+  width: 100%;
+  height: 148px;
+  top: 1px;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
+
+.main-top-left {
+  position: absolute;
+  width: 6px;
+  height: 1px;
+  left: -2px;
+  top: -1px;
+  background: url(MainTL.gif) no-repeat top left;
+}
+
+.main-top-right {
+  position: absolute;
+  width: 6px;
+  height: 1px;
+  right: -2px;
+  top: -1px;
+  background: url(MainTR.gif) no-repeat top right;
+}
+
+.main-top-left2 {
+  position: absolute;
+  width: 2px;
+  height: 8px;
+  left: -2px;
+  top: 0px;
+  background: url(MainTL2.gif) no-repeat top left;
+}
+
+.main-top-right2 {
+  position: absolute;
+  width: 2px;
+  height: 8px;
+  right: -2px;
+  top: 0px;
+  background: url(MainTR2.gif) no-repeat top right;
+}
+
+.main-top {
+  position: absolute;
+  width: 892px;
+  height: 1px;
+  top: -1px;
+  left: 4px;
+  background-color: #E3E3E3;
+}
+
+.main-gradient {
+  position: absolute;
+  width: 900px;
+  height: 420px;
+  left: 0px;
+  top: 0px;
+  background: url(MainGradient.gif) repeat-x top;
+}
+
+.main-bars {
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  width: 904px;
+  border-left: 1px solid #E3E3E3;
+  border-right: 1px solid #E3E3E3;
+  border-bottom: 1px solid #E3E3E3;
+  /*
+  border-left: 1px solid #FF0000;
+  border-right: 1px solid #FF0000;
+  */
+}
+
+
+#mainframe {
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  width: 902px;
+  position:relative;
+  background-color: #C0C0C0;
+  border-left: 1px solid #AAAAAA;
+  border-right: 1px solid #AAAAAA;
+  border-bottom: 1px solid #808080;
+  /*
+  border-left: 1px solid #00FF00;
+  border-right: 1px solid #00FF00;
+  */
+}
+
+.main-subtitle {
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.main-inset {
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  background-color: #FFF;
+  border-left: 1px solid #909090;
+  border-right: 1px solid #909090;
+  border-top: 1px solid #ACACAC;
+  border-bottom: 1px solid #808080;
+  width:684px;
+  /*
+  background-color: #FF8000;
+  border-left: 1px solid #0000FF;
+  border-right: 1px solid #00FFFF;
+  border-top: 1px solid #FFFF00;
+  */
+}
+
+.main-inset-bars {
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  width: 686px;
+  margin-left: 14px;
+  border-left: 1px solid #C8C8C8;
+  border-right: 1px solid #C8C8C8;
+  border-bottom: 1px solid #ACACAC;
+  /*
+  border-left: 1px solid #FF00FF;
+  border-right: 1px solid #800080;
+  */
+}
+
+pre {
+  font-size: 12px;
+}
+
+table {
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family: Verdana, "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 17px;
+  margin: 15px 0px 5px 0px;
+}
+
+h4 {
+  font-size: 12px;
+  margin: 15px 0px 5px 0px;
+}
+
+div {
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+.justreleased {
+  color: #F00;
+}
+
+#companyname {
+  text-align: center;
+}
+
+#navbar {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#productbar {
+  text-align: right;
+  font-size: 12px;
+}
+
+#pageframe {
+  width: 904px;
+  /*margin-top: 20px;*/
+  margin-top: 0px;
+}
+
+.main-inner-content {
+  width: 500px;
+  text-align: left;
+}
+
+.main-content{
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  line-height: 1.5;
+  /*width: 700px;  Removed, depends on parent div's width! */
+  background-color: #FFF;
+  border-left: 1px solid #909090;
+  border-right: 1px solid #909090;
+  border-top: 1px solid #ACACAC;
+  border-bottom: 1px solid #808080;
+}
+
+.main-content-bars {
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+
+  position:relative; /* This is key! */
+  line-height: 1.5;
+
+  width: 702px;
+  border-left: 1px solid #C8C8C8;
+  border-right: 1px solid #C8C8C8;
+  border-bottom: 1px solid #ACACAC;
+  /*
+  border-left: 1px solid #FF0000;
+  border-right: 1px solid #FF0000;
+  */
+
+  margin-left: 12px;
+}
+
+
+.white {
+  color: #FFF;
+}
+
+.subtitletext {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.copyright {
+  text-align: right;
+  color: #FFF;
+  font-size: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 16px;
+}
+
+.form-inset {
+  background: #FFF;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  border-left: 1px solid #909090;
+  border-right: 1px solid #909090;
+  border-top: 1px solid #ACACAC;
+  border-bottom: 1px solid #808080;
+}
+
+#topmargin {
+  height: 40px;
+}
+
+#tophalfpagemargin {
+  height: 100px;
+}
+
+#bottomhalfpagemargin {
+  height: 50px;
+}
+
+#topmargin2 {
+  height: 20px;
+}
+
+#topmargin3 {
+  height: 10px;
+}
+
+#topmainmargin {
+  height: 70px;
+}
+
+#bottommainmargin {
+  clear: both;
+  height: 70px;
+}
+
+
+.icon {
+  border:0;
+}
+
+.rounder {
+  height: 8px;
+  width: 700px;
+}
+
+.fullwidth {
+  width: 700px;
+}
+
+.left {
+  position: absolute;
+  left: 0px;
+}
+
+.lefticon {
+  float: left;
+  margin-right: 20px;
+}
+
+.righticon {
+  float: right;
+  margin-left: 20px;
+}
+
+.right {
+  position: absolute;
+  right: 0px;
+}
+
+.bottomleft {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+.bottomright {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0px;
+}
+
+a.white:LINK { color: #FFFFFF; }
+a.white:VISITED { color: #FAFAFA; }
+a.justreleased:LINK { color: #F00; }
+a.justreleased:VISITED { color: #F88; }
+a:LINK { color: #333333; }
+a:VISITED { color: #666; }
+
+#productheader {
+  position: relative;
+  height: 140px;
+}
+
+#productlogo {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+}
+
+#productname {
+  position: absolute;
+  top: 30px;
+  right: 0px;
+}
+
+#productbar {
+  position: absolute;
+  right: 0px;
+  bottom: 30px;
+}
+
+.locate {
+  position: relative;
+}
+
+.rightinset {
+  position: relative;
+  float: right;
+  text-align: center;
+  margin: 20px;
+}
+
+.leftinset {
+  position: relative;
+  background-color: #F3F3F3;
+  width: 200px;
+  float: left;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.sshotinset {
+  position: relative;
+  width: 110px;
+  background-color: #F3F3F3;
+  float: right;
+  text-align: center;
+}
+
+.sshotinsetcontents {
+  margin: 5px;
+}
+
+.centerinset {
+  center;
+  position: relative;
+  background-color: #F3F3F3;
+  width: 250px;
+  -align: center;
+  text-align: center;
+}
+
+#promotext {
+  margin: 5px;
+  vertical-align: bottom;
+}
+
+.dlinsetold {
+  float: right;
+  background-color: #F3F3F3;
+  position: relative;
+  width: 176px;
+}
+
+.dlinset {
+  float: right;
+}
+
+#dlarrow {
+  float: left;
+  margin: 5px 5px;
+}
+
+
+#dltext {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.frontpagenews {
+  color: #777;
+  font-style: italic;
+  font-size: 10px;
+  width: 500px;
+  text-align: center;
+}
+
+/* new rules for the May'06 redesign */
+.mainwide {
+  position:relative;
+  width: 900px;
+  text-align: center; /* centers the elements under IE */
+}
+
+.mainwide15 {
+  position:relative;
+  width: 900px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.main-title {
+  margin: 0px auto; /* centering under firefox */
+  padding: 0px;
+  width: 400px;
+  color: #333333;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.secondary-title {
+  margin: 0px auto; /* centering under firefox */
+  color: #333333;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.may06title {
+  margin: 0px auto; /* centering under firefox */
+  padding: 0px;
+  width: 400px;
+}
+
+.may06subtitle {
+  margin: 0px auto; /* centering under firefox */
+  padding: 0px;
+  width: 260px;
+}
+
+.smalltext {
+  font-size: 12px;
+}
+
+.smalltext2 {
+  font-size: 11px;
+}
+
+.floatleft {
+  float: left;
+}
+
+.floatright {
+  float: right;
+}
+
+.animinset {
+  position: relative;
+  float: right;
+  text-align: center;
+}
+
+.testimonial-quote {
+  font-style: italic;
+}
+
+/* New styling classes, not determining width */
+.sheet-bars {
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+
+  position:relative; /* This is key! */
+
+  /* width: 702px; */
+  border-left: 1px solid #C8C8C8;
+  border-right: 1px solid #C8C8C8;
+  border-bottom: 1px solid #ACACAC;
+  /*
+  border-left: 1px solid #FF0000;
+  border-right: 1px solid #FF0000;
+  */
+
+  /* margin-left: 12px; */
+}
+
+.sheet {
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  line-height: 1.5;
+
+  /*width: 700px;  Removed, depends on parent div's width! */
+
+  background-color: #FFF;
+  border-left: 1px solid #909090;
+  border-right: 1px solid #909090;
+  border-top: 1px solid #ACACAC;
+  border-bottom: 1px solid #808080;
+}
+
+.sheet-inner {
+  /* width: 600px; */
+  text-align: left;
+}

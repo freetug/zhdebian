@@ -1,0 +1,52 @@
+
+
+＃调节音量
+alsamixer
+
+=======================================
+
+＃查看wifi热点
+iw dev
+iwlist
+ip a
+iwlist scanning | grep -i ssid
+iwconfig
+
+#nmtui和iwctl
+
+NetworkManager 命令行nmcli
+
+连接WPA/WPA2加密无线网络zhang
+输入命令wpa_passphrase zhang 产生如下psk等信息，zhang是无线网ssid，回车后输入密码12345678：
+$ wpa_passphrase zhang
+# reading passphrase from stdin
+12345678
+
+=======================================
+
+
+#手动释放内存
+echo 3 > /proc/sys/vm/drop_caches 
+=======================================
+
+#命令行链接蓝牙
+bluetoothctl
+scan on
+pair [MAC address]
+connect [MAC address]
+disconnect
+
+======================================
+
+如何使用tar命令批量解压某个文件夹下的所有tar.gz文件？
+ ls *.tar.gz | xargs -n1 tar xzvf
+
+tar –xvf file.tar         // 解压 tar 包 
+tar -xzvf file.tar.gz     // 解压 tar.gz 
+tar -xjvf file.tar.bz2    // 解压 tar.bz2 
+tar –xZvf file.tar.Z      // 解压 tar.Z 
+unrar e file.rar          // 解压 rar 
+unzip file.zip            // 解压 zip 
+
+======================================
+

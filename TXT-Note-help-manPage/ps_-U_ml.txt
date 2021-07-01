@@ -1,0 +1,44 @@
+  PID TTY          TIME CMD
+ 8268 ?        00:00:00 systemd
+ 8269 ?        00:00:00 (sd-pam)
+ 8321 ?        00:00:02 dbus-daemon
+ 8424 ?        00:00:00 gvfsd
+ 8432 ?        00:00:01 dconf-service
+ 8450 ?        00:00:04 pulseaudio
+ 8468 ?        00:00:00 gvfs-udisks2-vo
+ 8480 ?        00:00:00 gvfs-mtp-volume
+ 8484 ?        00:00:00 gvfs-goa-volume
+ 8491 ?        00:00:00 gvfs-afc-volume
+ 8510 ?        00:00:00 gvfs-gphoto2-vo
+ 8525 ?        00:00:00 agent
+ 8552 ?        00:00:00 gvfsd-trash
+ 8582 ?        00:00:03 gvfsd-metadata
+ 8599 ?        00:00:00 obexd
+ 8657 ?        00:00:00 gvfsd-network
+ 8697 ?        00:00:00 gvfsd-dnssd
+ 9530 ?        00:00:00 agent
+ 9785 ?        00:00:00 gvfsd-computer
+10945 ?        00:00:00 gvfsd-http
+11287 ?        00:00:01 fvwm2
+11306 ?        00:00:01 fcitx
+11348 ?        00:00:00 dbus-daemon
+11351 ?        00:00:00 ssh-agent
+11353 ?        00:00:00 fcitx-dbus-watc
+11385 ?        00:00:00 at-spi-bus-laun
+11390 ?        00:00:00 dbus-daemon
+11394 ?        00:00:00 at-spi2-registr
+11401 ?        00:00:00 FvwmButtons
+11402 ?        00:00:00 FvwmEvent
+11404 ?        00:00:00 FvwmAuto
+11405 ?        00:00:00 FvwmIconMan
+11410 ?        00:00:18 rox
+11480 ?        00:00:58 firefox-esr
+11520 ?        00:00:12 Web Content
+11566 ?        00:00:17 WebExtensions
+11608 ?        00:00:02 Web Content
+11629 ?        00:00:02 Web Content
+11686 ?        00:00:02 Web Content
+11711 ?        00:00:00 Web Content
+11800 ?        00:00:01 x-terminal-emul
+11804 pts/0    00:00:00 bash
+11811 pts/0    00:00:00 ps

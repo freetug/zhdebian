@@ -1,0 +1,31 @@
+Debian安装Chrome和Chromium
+SorelCheung 2017-05-20 10:53:21 21028 收藏 4
+分类专栏： Linux 文章标签： debian chrome chromium
+版权
+
+由于一些历史原因，在绝大多数Linux发行版上默认的浏览器都是Firefox，Firefox是一款很伟大的软件，功能强悍而且开源，但Google开发的Chrome更快一些而且整合了很多Google自己的东西，常用Google的会觉得Chrome体验更好一些，下面介绍一下在Debian下安装Chrome和Chromium的方法
+首先，编辑/etc/apt/sources.list文件并加入下面这句
+
+deb http://dl.google.com/linux/chrome/deb/ stable main
+
+    1
+
+保存并退出以后，依次执行下面命令
+
+$ wget https://dl-ssl.google.com/linux/linux_signing_key.pub
+$ sudo apt-key add linux_signing_key.pub
+$ sudo apt-get update
+$ sudo apt-get install google-chrome-stable
+
+如果你要安装Chrome-Beta或者是Chrome-Unstable，则将上面最后一个命令换成
+
+$ sudo apt-get install google-chrome-beta
+$ sudo apt-get install google-chrome-unstable
+
+如果你要安装的是Chromium（Chromium是开源的，但原生不支持PDF），则更简单一些，直接执行下面两条命令就可以了
+
+$ sudo apt-get update
+$ sudo apt-get install chromium chromium-l10n
+————————————————
+版权声明：本文为CSDN博主「SorelCheung」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/demorngel/article/details/72571153

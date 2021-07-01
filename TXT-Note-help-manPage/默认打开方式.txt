@@ -1,0 +1,23 @@
+atril、gimp和evince，三者均可以打开application/pdf格式文件。
+gimp为一款图像处理软件；
+atril为mate环境下常用的文档查看器；
+evince为gnome环境下常用的文档查看器。
+
+
+某mate桌面和gnome服务器环境中配置文件mimeapps.list都定义了application/pdf格式文件的默认打开方式为evince.desktop
+但因为桌面系统环境下默认安装有atril和gimp，未安装evince。所以配置文件mimeapps.list无效，
+进而会使用mimeinfo.cache文件中的定义。
+
+mimeinfo.cache文件一般在系统安装后期生成，对于默认安装有atril和gimp的mate桌面系统，mimeinfo.cache文件中可能会有：
+application/pdf=gimp.desktop;atril.desktop;
+或
+application/pdf=atril.desktop;gimp.desktop;
+
+mimeinfo.cache文件中atril.desktop和gimp.desktop的前后顺序是随机的。
+而这个前后顺序却可以支配pdf文件默认打开方式的优先级，即：
+application/pdf=gimp.desktop;atril.desktop;    =====> 表示mimeapps.list未定义或定义无效时，默认使用gimp打开pdf文件，若gimp不存在，则使用atril打开pdf文件；
+application/pdf=atril.desktop;gimp.desktop;    =====> 表示mimeapps.list未定义或定义无效时，默认使用atril打开pdf文件，若atril不存在，则使用gimp打开pdf文件。
+
+ 
+
+其他格式文件默认打开方式的优先级同样遵循上述配置规律。

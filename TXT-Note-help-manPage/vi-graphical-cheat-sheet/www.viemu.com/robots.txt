@@ -1,0 +1,16 @@
+# Robots.txt file for http://www.viemu.com
+#
+# ViEmu1*.msi and ViEmu2*.msi are the most important removals...
+
+User-agent: *
+Disallow: /ViEmu1
+Disallow: /ViEmu2
+Disallow: /ViEmu-2
+Disallow: /ViEmuVS-2
+Disallow: /ViEmuSQL-2
+Disallow: /ViEmuW-
+Disallow: /ViEmuWO-
+Disallow: /old.html
+Disallow: /iframe.html
+Disallow: /DXViEmuCompat.dll
+
