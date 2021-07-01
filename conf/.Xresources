@@ -1,0 +1,39 @@
+! Xterm settings
+! copy & paste
+XTerm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
+ xterm*VT100.Translations: #override \
+                 Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
+                 Ctrl Shift <Key>C:    copy-selection(CLIPBOARD)
+                 
+ 
+! English font
+xterm*faceName: DejaVu Sans Mono:antialias=True:pixelsize=15
+! Chinese font
+xterm*faceNameDoublesize:WenQuanYi Zen Hei Mono:antialias=True:pixelsize=15
+ 
+ 
+!input method
+XTerm*inputMethod:fcitx
+ 
+! scrollbar
+XTerm*scrollBar: true
+XTerm*rightScrollBar: true 
+XTerm*SaveLines: 4096
+ 
+!xterm.geometry: 80x36
+xterm*scrollBar: true
+xterm*rightScrollBar: true
+!xterm*loginshell: true
+!xterm*cursorBlink: true
+!xterm*background: black
+!xterm*foreground: gray
+!xterm.borderLess: true
+!xterm.cursorBlink: true
+!xterm*colorUL: yellow
+ 
+!xterm*colorBD: white
+
+
+
+
+
