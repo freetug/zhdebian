@@ -686,7 +686,7 @@ Key F3 WTSFI   M   Maximize
 Key F4 WTSFI   M   Close
 
 # Alt + Space 弹出窗口管理菜单（最大化，最小化...）
-Silent Key space WTSFI M Menu MenuWindowOps
+Silent Key space WTSFI M Menu MenuWindowOpsLong
 #############end:拷贝过来的，Alt+F4关闭窗口#####
 
 
