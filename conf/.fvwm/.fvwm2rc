@@ -339,7 +339,7 @@ MenuStyle * Font "xft:文泉驿微米黑:Bold:size=8:antialias=True"
 # The root menu will PopUp with a click in the root
 # window or using alt-f1 (or menu).
 DestroyMenu MenuFvwmRoot
-AddToMenu   MenuFvwmRoot "Root Menu(Alt+b)" Title
+AddToMenu   MenuFvwmRoot "Root Menu(L-win Key)" Title
 + "Programs%icons/24x24-program.png%" Popup MenuPrograms
 + "&Application%icons/24x24-programs.png%" Popup MenuApplication
 + "" Nop
@@ -383,7 +383,7 @@ PipeRead "fvwm-menu-desktop -e"
 # When adding programs you don't need to use the Test (x foo)
 # lines as this is only to help make this menu portable.
 DestroyMenu MenuPrograms
-AddToMenu   MenuPrograms "Programs(Alt+Space)" Title
+AddToMenu   MenuPrograms "Programs(Alt+M)" Title
 + "Root Menu%icons/24x24-programs.png%" Popup MenuFvwmRoot
 Test (x rxvt-unicode) + "rxvt-unicode%icons/24x24-urxvt.png%" Exec exec rxvt-unicode
 Test (x chromium) + "Chromium" Exec exec chromium
@@ -653,12 +653,14 @@ AddToMenu   MenuFvwmManPages "Help" Title
 #         Mouse <X> <Context> <Modifier> <Action>
 ####################
 
-# Alt-F1 or Menu to load the root menu and Alt-Tab for a WindowList.
+# left win or Menu to load the root menu and Alt-Tab for a WindowList.
 # Ctrl-F1/F2/F3/F4 will switch between the Virtual Desktops.
 # Super_R (windows key) will launch a terminal.
 #
 # Silent supresses any errors (such as keyboards with no Menu key).
-Silent Key b A M Menu MenuFvwmRoot
+
+####Silent Key b A M Menu MenuFvwmRoot## Alt + b 弹出根菜单
+Silent Key Super_L A A Menu MenuFvwmRoot
 Silent Key Menu A A Menu MenuFvwmRoot
 Silent Key Tab A M WindowList Root c c NoDeskSort, SelectOnRelease Meta_L
 Silent Key F1 A C GotoDesk 0 0
@@ -670,7 +672,9 @@ Silent Key F4 A C GotoDesk 0 3
 #Silent Key Super_L A C Exec exec urxvt 
 Silent Key t A C Exec exec $[infostore.terminal]
 #Silent Key t A C Exec exec urxvt 
-Silent Key space A M Menu MenuPrograms Root c c 
+
+# Alt + M 弹出程序菜单
+Silent Key M A M Menu MenuPrograms Root c c 
 
 
 #############begin:拷贝过来的，Alt+F4关闭窗口#####
@@ -680,6 +684,9 @@ Silent Key space A M Menu MenuPrograms Root c c
 Key F2 WTSFI   M  Move 
 Key F3 WTSFI   M   Maximize
 Key F4 WTSFI   M   Close
+
+# Alt + Space 弹出窗口管理菜单（最大化，最小化...）
+Silent Key space WTSFI M Menu MenuWindowOps
 #############end:拷贝过来的，Alt+F4关闭窗口#####
 
 
