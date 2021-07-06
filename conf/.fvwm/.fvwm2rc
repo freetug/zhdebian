@@ -562,6 +562,8 @@ AddToMenu   MenuWindowOpsLong
 + "StaysOnBottom"       Pick (CirculateHit) Layer 0 2
 + "" Nop
 + "Identify"            Module FvwmIdent
++ "" Nop
++ "Send To"             Popup MenuSendTo
 
 DestroyMenu MenuIconOps
 AddToMenu   MenuIconOps
