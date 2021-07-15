@@ -1,0 +1,48 @@
+ tar -cvf - ./.fvwm/ | pigz > .fvwm_bkup-15-Jul-2021.tar.gz
+ 
+ 
+ 语法
+
+pigz [ -cdfhikKlLmMnNqrRtz0..9,11 ] [ -b blocksize ] [ -p threads ] [ -S suffix ] [ name ...  ]
+unpigz [ -cfhikKlLmMnNqrRtz ] [ -b blocksize ] [ -p threads ] [ -S suffix ] [ name ...  ]
+
+实例
+
+压缩单个文件
+
+pigz -k your_file_name
+
+加上-k选项保留原始文件，会在当前工作目录获得压缩后的your_file_name.gz 文件
+
+这时候还可以用
+
+pigz -l your_file_name.gz
+
+来查看压缩文件后的压缩率
+
+对应的单个文件解压命令则是
+
+unpigz -d your_file_name.gz
+
+同样，如果需要保留.gz文件，记得加上-k选项
+
+
+压缩文件夹
+
+pigz没有压缩文件夹的选项，只能压缩单个文件。若想压缩文件夹，可以结合tar使用：
+
+tar -cvf - dir1 dir2 dir3 | pigz > output.tar.gz
+
+解压文件夹
+
+pigz -d output.tar.gz
+
+这样得到的是output.tar，再通过tar解打包就好了
+
+也可以直接用tar命令解压
+
+tar -xzvf output.tar.gz
+
+常用参数
+
+    -0 ~ -9 压缩等级，数字越大压缩率越高，速度越慢，默认为6-k --keep 压缩后不删除原始文件-l --list 列出压缩输入的内容-K --zip Compress to PKWare zip (.zip) single entry format-d --decompress 解压缩输入-p --processes n 使用n核处理，默认为使用所有CPU核心
