@@ -1,4 +1,4 @@
- tar -cvf - ./.fvwm/ | pigz > .fvwm_bkup-15-Jul-2021.tar.gz
+tar -cvf - ./.fvwm/ | pigz > .fvwm_bkup-15-Jul-2021.tar.gz
  
  
  语法

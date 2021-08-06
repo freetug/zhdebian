@@ -280,6 +280,7 @@ Style FvwmButtons Sticky, NoTitle, WindowListSkip, CirculateSkipIcon, CirculateS
             StaysOnTop, !Iconifiable
 Style FvwmIconMan Sticky, NoTitle, WindowListSkip, CirculateSkipIcon, CirculateSkip, \
             StaysOnTop, !Iconifiable
+
 ##########end:从别的地方拷贝过来的#########k
 
 
@@ -386,7 +387,7 @@ DestroyMenu MenuPrograms
 AddToMenu   MenuPrograms "Programs(Alt+M)" Title
 + "Root Menu%icons/24x24-programs.png%" Popup MenuFvwmRoot
 Test (x rxvt-unicode) + "rxvt-unicode%icons/24x24-urxvt.png%" Exec exec rxvt-unicode
-Test (x chromium) + "Chromium" Exec exec chromium
+Test (x chromium) + "Chromium%icons/24x24-chromium.png%" Exec exec chromium
 Test (x firefox) + "&Firefox%icons/24x24-firefox-esr.png%" Exec exec firefox
 #Test (x rxvt-unicode) + "rxvt-unicode" Exec exec rxvt-unicode
 Test (x google-chrome) + "Google-&Chrome%icons/24x24-product_logo_32.png%" Exec exec google-chrome
@@ -419,7 +420,7 @@ Test (x electron-ssr) + "electron-ssr%icons/24x24-shadowsocks-qt5.png%" Exec exe
 #######自定义菜单############################
 DestroyMenu MenuInternetAPP
 AddToMenu   MenuInternetAPP "InternetAPP" Title
-Test (x chromium) + "Chromium" Exec exec chromium
+Test (x chromium) + "Chromium%icons/24x24-chromium.png%" Exec exec chromium
 Test (x firefox) + "Firefox%icons/24x24-firefox-esr.png%" Exec exec firefox
 #Test (x rxvt-unicode) + "rxvt-unicode" Exec exec rxvt-unicode
 Test (x google-chrome) + "Google-Chrome%icons/24x24-product_logo_32.png%" Exec exec google-chrome
@@ -903,6 +904,7 @@ DestroyModuleConfig FvwmIconMan:*
 *FvwmIconMan: Resolution global
 *FvwmIconMan: Tips needed
 *FvwmIconMan: Sort id
+#*FvwmIconMan: DeskOnly
 
 # FvwmEvent
 #
@@ -938,6 +940,7 @@ AddToFunc   xclock-DateTime
 *PagerPanel: Geometry 150x35
 *PagerPanel: Colorset 13
 *PagerPanel: (Nosize,Swallow(NoClose, UseOld)   stalonetray   'Exec exec stalonetray -p -c "~/.fvwm/.stalonetrayrc" ', Frame 0)
+
 Style MainPanel NoTitle, StaysOnTop, Sticky, WindowListSkip, \
         CirculateSkipIcon, CirculateSkip, HandleWidth 0, BorderWidth 0, \
         NeverFocus, Layer 1
@@ -973,6 +976,31 @@ DestroyModuleConfig FvwmPager: *
 #*FvwmPager: Window3dBorders
 
 ###################end:从别的地方拷贝过来的########
+
+#################begin:从别的地方拷贝过来的，这些设置暂时没有用#########
+Style FvwmTaskBar NoTitle, HandleWidth 0, BorderWidth 0
+*FvwmTaskBar: UseSkipList
+*FvwmTaskBar: AutoStick
+*FvwmTaskBar: DeskOnly
+*FvwmTaskBar: Action Click1 DeiconifyRaiseAndFocus
+*FvwmTaskBar: Action Click2 Iconify On
+*FvwmTaskBar: Action Click3 Lower
+*FvwmTaskBar: MailCommand Exec exec rxvt -e mutt
+*FvwmTaskBar: 3DFvwm
+*FvwmTaskBar: StartName FVWM
+*FvwmTaskBar: StartMenu RootMenu
+*FvwmTaskBar: Font -*-simsun-medium-r-*-*-14-*-*-*-*-*-*-*
+*FvwmTaskBar: SelFont -*-simsun-medium-r-*-*-14-*-*-*-*-*-*-*
+*FvwmTaskBar: ShowTips
+*FvwmTaskBar: ClockFormat
+*FvwmTaskBar: WindowButtonsRightMargin 20
+*FvwmTaskBar: Back seagreen
+*FvwmTaskBar: Fore gold2
+*FvwmTaskBar: FocusFore cornsilk
+*FvwmTaskBar: IconBack darkgreen
+*FvwmTaskBar: IconFore white
+###################end:从别的地方拷贝过来的########
+
 
 
 
