@@ -1,0 +1,85 @@
+
+  mirror -c --parallel=3 -R /home/vsftpdServer/ftpuserhk/CloudMusic/ /Music/CloudMusic/
+
+
+
+
+Debian下的FTP工具：lftp常用的使用方法
+http://nrlab.csie.ntust.edu.tw/~hdj/twxoops/html/modules/news/article.php?storyid=13
+http://moto.debian.org.tw/viewtopic.php?t=2182
+http://blog.segaa.net/blog.php/1/post/3/100
+    lftp是linux下的一款ftp工具，lftp虽然没有界面，但是安装简单，使用方便，功能也极为强大。
+    0. ftp的中文设置方法，ftp为GBK编码，本地为UTF8编码(后两句主要是为了遇到utf8的FTP时方便切换）
+    ~/.lftp/rc
+    set ftp:charset "gbk"
+    set file:charset "UTF-8"
+    alias cn "set ftp:charset gbk;set file:charset UTF-8"
+    alias utf8 "set ftp:charset UTF-8; set file:charset UTF-8"
+     1. 安装。在debian系下安装软件太简单了
+     ~>  apt-get install lftp
+     ~> lftp 127.0.0.1
+     lftp :~> user name
+     2. 显示远端文件列表:
+     ~> ls
+     3. 切换远端目录：
+     ~> cd 目录
+     4. 下载远端文件：
+     ~> get 文件
+     5. 使用通配符下载远端文件：
+     ~> mget *
+     6. 使用多个线程来下载远端文件, 预设为五个：
+     ~> pget 文件
+     7. 镜像（反镜像）一个目录：
+     ~> mirror [-c] [--parallel=n] [-R] 远程目录 本地目录
+     其中-c是断点续传参数，--parallel是多线程参数，-R是反镜像参数。
+     8. 上传文件：
+     ~> put 文件
+     9. 使用通配符上传文件：
+     ~> mput *
+     10. 移动远端文件或改名：
+     ~> mv 文件 [新文件名] [新目录]
+     11. 删除远端文件：
+     ~> rm 文件
+     12. 使用通配符删除远端文件：
+     ~> mrm *
+     13. 建立远端目录
+     ~> mkdir 目录
+     14. 删除远端目录
+     ~> rmdir 目录
+     15. 显示目前远端所在目录
+     ~> pwd
+     16. 计算远端目录的大小
+     ~> du
+     17. 执行本地 shell的命令：
+     ~> ！命令
+     18. 切换本地目录：
+     ~> lcd 目录
+     19. 显示本地目录
+     ~> lpwd 目录
+     20. 退出ftp：
+     ~> exit
+     ~> quit
+     ~> bye
+     21. 缺省情况下，按Ctrl+z,正在执行的任务将转为后台执行，也可以在命令行末尾加&符号使任务在后台执行。用jobs命令可以查看所有的后台进程。用queue命令可以排队新的任务。如果退出lftp是还有任务在后台执行，lftp将转为后台执行。
+     
+==============================
+[freebsd] lftp安裝與應用
+Freebsd — 作者 segaa @ 00:34
+雖然之前都使用  rsync ，但是若是其中一方的站台並非自己可以主控，
+就需要透過ftp 來作資料備份了，原本是想利用 ncftp 的 mput  / mget -R * 來實做
+今天聽whatup 提到 lftp 可以透過指令直接 mirror 兩個站台間的資料，所以就來參考看看吧
+1.安裝 lftp
+cd /usr/ports/ftp/lftp
+make install FORCE_PKG_REGISTER="yes" clean ; rehash
+2應用請參照 whatup教學
+範例: 編輯 up.sh 檔內容如下
+open 208.97.139.12 -u id,pw
+lcd /home/segaa/public_html
+cd segaa.idv.tw
+mirror -R
+定期以 cron 執行 /usr/local/bin/lftp -f /home/segaa/up.sh
+               
+               
+               
+               
+               
