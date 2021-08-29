@@ -447,6 +447,7 @@ Test (x electron-ssr) + "electron-ssr%icons/24x24-shadowsocks-qt5.png%" Exec exe
 ###################################
 DestroyMenu MenuUtilities
 AddToMenu   MenuUtilities "Utilities" Title
+Test (x pcmanfm) + "Pcman File Manager%icons/24x24-pcmanfm.png%" Exec exec pcmanfm
 #Test (x chromium) + "Chromium" Exec exec chromium
 #Test (x firefox) + "Firefox" Exec exec firefox
 Test (x rxvt-unicode) + "rxvt-unicode%icons/24x24-urxvt.png%" Exec exec rxvt-unicode
@@ -488,6 +489,9 @@ Test (x inkscape) + "inkscape%icons/24x24-inkscape.png%" Exec exec inkscape
 Test (x vlc) + "VLC%icons/24x24-vlc.png%" Exec exec vlc
 Test (x smplayer) + "Smplayer%icons/24x24-smplayer.png%" Exec exec smplayer
 Test (x gnome-subtitles) + "Gnome Subtitles%icons/24x24-gnome-subtitles.png%" Exec exec gnome-subtitles
+Test (x shotcut) + "ShotCut%icons/24x24-shotcut-logo.png%" Exec exec shotcut 
+24x24-audacity-logo.png
+Test (x audacity) + "Audacity%icons/24x24-audacity-logo.png%" Exec exec audacity
 #Test (x pluma) + "Pluma Txt" Exec exec pluma
 #Test (x geany) + "Geany Txt" Exec exec geany
 #Test (x rox) + "Rox File Manager" Exec exec rox
