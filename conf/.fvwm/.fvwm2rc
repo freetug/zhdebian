@@ -469,7 +469,10 @@ Test (x xfe) + "xfe Filer%icons/24x24-xfe.png%" Exec exec xfe
 Test (x catfish)  + "Catfish%icons/24x24-catfish.png%" Exec exec catfish 
 Test (x mate-screenshot) + "Mate-Screenshot%icons/24x24-mate-screenshot.png%" Exec exec mate-screenshot -i
 Test (x mate-system-monitor) + "System Monitor%icons/24x24-gnome-monitor.png%" Exec exec mate-system-monitor
-+ "Alt+Space%icons/24x24-programs.png%" Popup MenuFvwmRoot
+Test (x flameshot) + "FlameShot%icons/24x24-flameshot-logo.png%" Exec exec flameshot
+
+
++ "Application%icons/24x24-programs.png%" Popup MenuFvwmRoot
 ###################################
 DestroyMenu MenuMultimedia
 AddToMenu   MenuMultimedia "Multimedia" Title
@@ -490,7 +493,6 @@ Test (x vlc) + "VLC%icons/24x24-vlc.png%" Exec exec vlc
 Test (x smplayer) + "Smplayer%icons/24x24-smplayer.png%" Exec exec smplayer
 Test (x gnome-subtitles) + "Gnome Subtitles%icons/24x24-gnome-subtitles.png%" Exec exec gnome-subtitles
 Test (x shotcut) + "ShotCut%icons/24x24-shotcut-logo.png%" Exec exec shotcut 
-24x24-audacity-logo.png
 Test (x audacity) + "Audacity%icons/24x24-audacity-logo.png%" Exec exec audacity
 #Test (x pluma) + "Pluma Txt" Exec exec pluma
 #Test (x geany) + "Geany Txt" Exec exec geany
