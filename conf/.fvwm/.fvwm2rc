@@ -362,8 +362,9 @@ Test (x rxvt-unicode) + "rxv&t-unicode%icons/24x24-urxvt.png%" Exec exec rxvt-un
 #+ "M&an Pages%icons/help.png%" Popup MenuFvwmManPages
 #+ "Copy Config%icons/conf.png%" FvwmScript FvwmScript-ConfirmCopyConfig
 + "" Nop
-+ "Re&fresh%icons/24x24-refresh4.png%" Refresh
+#+ "Re&fresh%icons/24x24-refresh4.png%" Refresh
 + "&PowerOff%icons/24x24-poweroff.png%" exec systemctl poweroff
++ "Re&boot%icons/24x24-reboot.png%" exec systemctl reboot 
 + "&Suspend%icons/24x24-suspend.png%" exec systemctl suspend
 + "&Hibernate%icons/24x24-hibernate.png%" exec systemctl hibernate
 + "&Restar.fvwm%icons/24x24-restart.png%" Restart
@@ -404,6 +405,7 @@ Test (x vlc) + "VLC%icons/24x24-vlc.png%" Exec exec vlc
 Test (x smplayer) + "Smplayer%icons/24x24-smplayer.png%" Exec exec smplayer
 Test (x gnome-subtitles) + "Gnome Subtitles%icons/24x24-gnome-subtitles.png%" Exec exec gnome-subtitles
 Test (x pluma) + "&Pluma Txt%icons/24x24-pluma-text.png%" Exec exec pluma
+Test (x code) + "Visual Studio Code%icons/24x24-vscode.png%" Exec exec code 
 Test (x geany) + "Geany Txt%icons/24x24-geany.png%" Exec exec geany
 Test (x rox) + "&Rox Filer%icons/24x24-rox-filer.png%" Exec exec rox
 Test (x xfe) + "xfe Filer%icons/24x24-xfe.png%" Exec exec xfe
@@ -462,6 +464,7 @@ Test (x goldendict)  + "GoldenDict%icons/24x24-goldendict.png%" Exec exec golden
 #Test (x smplayer) + "Smplayer" Exec exec smplayer
 #Test (x gnome-subtitles) + "Gnome Subtitles" Exec exec gnome-subtitles
 Test (x pluma) + "Pluma Txt%icons/24x24-pluma-text.png%" Exec exec pluma
+Test (x code) + "Visual Studio Code%icons/24x24-vscode.png%" Exec exec code 
 Test (x geany) + "Geany Txt%icons/24x24-geany.png%" Exec exec geany
 Test (x rox) + "Rox Filer%icons/24x24-rox-filer.png%" Exec exec rox
 Test (x xfe) + "xfe Filer%icons/24x24-xfe.png%" Exec exec xfe
@@ -553,13 +556,13 @@ AddToMenu   MenuWindowOpsLong
 + "Move"                Move
 + "Resize"              Resize
 + "(De)Iconify"         Iconify
-+ "(Un)Maximize"        Maximize
++ "(Un)Ma&ximize"        Maximize
 + "(Un)Shade"           WindowShade
 + "(Un)Sticky"		Stick
 + "(No)TitleBar"	Pick (CirculateHit) ToggleTitle
 #+ "Send To"             Popup MenuSendTo
 + "" Nop
-+ "Close"               Close
++ "&Close"               Close
 + "" Nop
 + "Raise"		Raise
 + "Lower"		Lower
@@ -676,10 +679,12 @@ Silent Key F1 A C GotoDesk 0 0
 Silent Key F2 A C GotoDesk 0 1
 Silent Key F3 A C GotoDesk 0 2
 Silent Key F4 A C GotoDesk 0 3
-###  Ctrl+t启动urxvt  ######
+###  Alt+t启动urxvt  ######
 #Silent Key Super_L A C Exec exec $[infostore.terminal]
 #Silent Key Super_L A C Exec exec urxvt 
-Silent Key t A C Exec exec $[infostore.terminal]
+Silent Key t A M Exec exec $[infostore.terminal]
+
+#下面一行，Ctrl+t启动urxvt
 #Silent Key t A C Exec exec urxvt 
 
 # Alt + M 弹出程序菜单
