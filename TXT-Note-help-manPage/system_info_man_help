@@ -50,3 +50,9 @@ unzip file.zip            // 解压 zip
 
 ======================================
 
+sudo mount -t cifs -o username=super,password=123 //192.168.23.100/SuperPC_D /mnt/winShare/
+
+
+======================================
+
+

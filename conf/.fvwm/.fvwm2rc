@@ -348,16 +348,16 @@ AddToMenu   MenuFvwmRoot "Root Menu(L-win Key)" Title
 + "&Multimedia%icons/24x24-multimedia.png%" Popup MenuMultimedia
 + "&InternetAPP%icons/24x24-internet.png%" Popup MenuInternetAPP
 + "" Nop
-+ "Game%icons/24x24-game.png%" Popup MenuGame
++ "&Game%icons/24x24-game.png%" Popup MenuGame
 + "" Nop
-+ "XDG Menu%icons/24x24-groupprograms6.png%" Popup XDGMenu
++ "&XDG Menu%icons/24x24-groupprograms6.png%" Popup XDGMenu
 + "" Nop
-Test (x xterm) + "xterm%icons/24x24-urxvt.png%" Exec exec xterm
+Test (x xterm) + "x&term%icons/24x24-urxvt.png%" Exec exec xterm
 Test (x rxvt-unicode) + "rxv&t-unicode%icons/24x24-urxvt.png%" Exec exec rxvt-unicode
 #+ "&XTerm%icons/terminal.png%" Exec exec $[infostore.terminal]
 + "&Konsole%icons/24x24-console.png%" Exec exec $[infostore.terminal]
 + "" Nop
-+ "Fvwm&Console%icons/24x24-powershell.png%" Module FvwmConsole -terminal $[infostore.terminal]
++ "FvwmConsole%icons/24x24-powershell.png%" Module FvwmConsole -terminal $[infostore.terminal]
 #+ "&Wallpapers%icons/18x18-picture.png%" Popup BGMenu
 #+ "M&an Pages%icons/help.png%" Popup MenuFvwmManPages
 #+ "Copy Config%icons/conf.png%" FvwmScript FvwmScript-ConfirmCopyConfig
@@ -389,34 +389,34 @@ AddToMenu   MenuPrograms "Programs(Alt+M)" Title
 + "Root Menu%icons/24x24-programs.png%" Popup MenuFvwmRoot
 Test (x rxvt-unicode) + "rxvt-unicode%icons/24x24-urxvt.png%" Exec exec rxvt-unicode
 Test (x chromium) + "Chromium%icons/24x24-chromium.png%" Exec exec chromium
-Test (x firefox) + "&Firefox%icons/24x24-firefox-esr.png%" Exec exec firefox
+Test (x firefox) + "Firefo&x%icons/24x24-firefox-esr.png%" Exec exec firefox
 #Test (x rxvt-unicode) + "rxvt-unicode" Exec exec rxvt-unicode
 Test (x google-chrome) + "Google-&Chrome%icons/24x24-product_logo_32.png%" Exec exec google-chrome
 Test (x thunderbird)  + "Thunder-bird%icons/24x24-thunderbird.png%" Exec exec thunderbird
-Test (x speedcrunch)  + "SpeedCrunc&h%icons/24x24-speedcrunch.png%" Exec exec speedcrunch
+Test (x speedcrunch)  + "Speed&Crunc&h%icons/24x24-speedcrunch.png%" Exec exec speedcrunch
 Test (x goldendict)  + "Golden&Dict%icons/24x24-goldendict.png%" Exec exec goldendict
-Test (x gvim) + "gVim" Exec exec gvim
+Test (x gvim) + "g&Vim" Exec exec gvim
 Test (x xemacs) + "XEmacs" Exec exec xemacs
 Test (x gwenview) + "Gwenview%icons/24x24-gwenview.png%" Exec exec gwenview
 #Test (x phototonic) + "Phototonic%icons/24x24-phototonic.png%" Exec exec phototonic
-Test (x gimp) + "Gimp%icons/24x24-gimp.png%" Exec exec gimp
+Test (x gimp) + "&Gimp%icons/24x24-gimp.png%" Exec exec gimp
 Test (x inkscape) + "inkscape%icons/24x24-inkscape.png%" Exec exec inkscape
-Test (x vlc) + "VLC%icons/24x24-vlc.png%" Exec exec vlc
+Test (x vlc) + "&VLC%icons/24x24-vlc.png%" Exec exec vlc
 Test (x smplayer) + "Smplayer%icons/24x24-smplayer.png%" Exec exec smplayer
 Test (x gnome-subtitles) + "Gnome Subtitles%icons/24x24-gnome-subtitles.png%" Exec exec gnome-subtitles
 Test (x pluma) + "&Pluma Txt%icons/24x24-pluma-text.png%" Exec exec pluma
 Test (x code) + "Visual Studio Code%icons/24x24-vscode.png%" Exec exec code 
-Test (x geany) + "Geany Txt%icons/24x24-geany.png%" Exec exec geany
+Test (x geany) + "Geany &Txt%icons/24x24-geany.png%" Exec exec geany
 Test (x rox) + "&Rox Filer%icons/24x24-rox-filer.png%" Exec exec rox
 Test (x xfe) + "xfe Filer%icons/24x24-xfe.png%" Exec exec xfe
 Test (x catfish)  + "Catfi&sh%icons/24x24-catfish.png%" Exec exec catfish 
-Test (x pcmanfm) + "Pcman File Manager%icons/24x24-pcmanfm.png%" Exec exec pcmanfm
+Test (x pcmanfm) + "Pcman &File Manager%icons/24x24-pcmanfm.png%" Exec exec pcmanfm
 #Test (x caja) + "Caja File Manager" Exec exec caja
 Test (x mate-screenshot) + "Mate-Screenshot%icons/24x24-mate-screenshot.png%" Exec exec mate-screenshot -i
 Test (x mate-system-monitor) + "System Monitor%icons/24x24-gnome-monitor.png%" Exec exec mate-system-monitor
 Test (x qbittorrent)  + "qbittorrent%icons/24x24-qbittorrent.png%" Exec exec qbittorrent
 Test (x electron-ssr) + "electron-ssr%icons/24x24-shadowsocks-qt5.png%" Exec exec electron-ssr
-+ "Telegram%icons/24x24-telegram.png%" Exec exec ~/BinYX/BinNetYX/Telegram/Telegram 
+Test (x Telegram) + "Telegram%icons/24x24-telegram.png%" Exec exec ~/BinYX/BinNetYX/Telegram/Telegram 
 
 
 #######自定义菜单############################
@@ -449,15 +449,15 @@ Test (x electron-ssr) + "electron-ssr%icons/24x24-shadowsocks-qt5.png%" Exec exe
 ###################################
 DestroyMenu MenuUtilities
 AddToMenu   MenuUtilities "Utilities" Title
-Test (x pcmanfm) + "Pcman File Manager%icons/24x24-pcmanfm.png%" Exec exec pcmanfm
+Test (x pcmanfm) + "Pcman &File Manager%icons/24x24-pcmanfm.png%" Exec exec pcmanfm
 #Test (x chromium) + "Chromium" Exec exec chromium
 #Test (x firefox) + "Firefox" Exec exec firefox
 Test (x rxvt-unicode) + "rxvt-unicode%icons/24x24-urxvt.png%" Exec exec rxvt-unicode
-Test (x xterm) + "xterm%icons/24x24-urxvt.png%" Exec exec xterm
+Test (x xterm) + "x&term%icons/24x24-urxvt.png%" Exec exec xterm
 
 #Test (x google-chrome) + "Google-Chrome" Exec exec google-chrome
 #Test (x thunderbird)  + "Thunder-bird" Exec exec thunderbird
-Test (x speedcrunch)  + "SpeedCrunch%icons/24x24-speedcrunch.png%" Exec exec speedcrunch
+Test (x speedcrunch)  + "Speed&Crunch%icons/24x24-speedcrunch.png%" Exec exec speedcrunch
 Test (x goldendict)  + "GoldenDict%icons/24x24-goldendict.png%" Exec exec goldendict
 #Test (x gimp) + "Gimp" Exec exec gimp
 #Test (x vlc) + "VLC" Exec exec vlc
@@ -490,9 +490,9 @@ AddToMenu   MenuMultimedia "Multimedia" Title
 #Test (x xemacs) + "XEmacs" Exec exec xemacs
 Test (x gwenview) + "Gwenview%icons/24x24-gwenview.png%" Exec exec gwenview
 #Test (x phototonic) + "Phototonic%icons/24x24-phototonic.png%" Exec exec phototonic
-Test (x gimp) + "Gimp%icons/24x24-gimp.png%" Exec exec gimp
+Test (x gimp) + "&Gimp%icons/24x24-gimp.png%" Exec exec gimp
 Test (x inkscape) + "inkscape%icons/24x24-inkscape.png%" Exec exec inkscape
-Test (x vlc) + "VLC%icons/24x24-vlc.png%" Exec exec vlc
+Test (x vlc) + "&VLC%icons/24x24-vlc.png%" Exec exec vlc
 Test (x smplayer) + "Smplayer%icons/24x24-smplayer.png%" Exec exec smplayer
 Test (x gnome-subtitles) + "Gnome Subtitles%icons/24x24-gnome-subtitles.png%" Exec exec gnome-subtitles
 Test (x shotcut) + "ShotCut%icons/24x24-shotcut-logo.png%" Exec exec shotcut 
@@ -510,7 +510,7 @@ AddToMenu   MenuApplication "Application" Title
 + "&Utilities%icons/24x24-utilities.png%" Popup MenuUtilities
 + "&Multimedia%icons/24x24-multimedia.png%" Popup MenuMultimedia
 + "&InternetAPP%icons/24x24-internet.png%" Popup MenuInternetAPP
-+ "Game%icons/24x24-game.png%" Popup MenuGame
++ "&Game%icons/24x24-game.png%" Popup MenuGame
 ###################################
 DestroyMenu MenuGame
 AddToMenu   MenuGame "Game" Title
