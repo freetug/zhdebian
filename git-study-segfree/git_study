@@ -3,3 +3,7 @@ git checkout main是用来设定工作区的分支。如果单用checkout会导�
 离开当前工作分支之后，git add . 将无法识别git工作目录（git init命令设定的文件夹）新增的文件。
 
 
+git add .
+git comment -m "added TSWMS.xlsm"
+git push
+
