@@ -62,3 +62,16 @@ sudo /etc/init.d/networking stop
 sudo /etc/init.d/networking start
 
 ======================================
+
+sudo apt-get update & sudo apt-get upgrade -y
+
+
+======================================
+
+
+
+
+
+
+======================================
+
