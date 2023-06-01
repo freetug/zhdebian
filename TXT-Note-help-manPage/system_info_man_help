@@ -67,7 +67,19 @@ sudo apt-get update & sudo apt-get upgrade -y
 
 
 ======================================
+Unzip error: unsupported compression method 99
 
+The compression method 99 refers to Adavanced Encryption Standard encryption, which is not supported by unzip. However, you can use 7zip to unzip your password-protected file.
+
+In Debian, do the followings:
+# Install the full version 7zip.
+sudo apt-get install p7zip-full
+ 
+# Unzip your file.
+7z  x  your-file.zip
+ 
+# Or unzip your password protected file.
+7z  x  -pPASSWORD  your-file.zip
 
 
 
