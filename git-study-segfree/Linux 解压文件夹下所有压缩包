@@ -1,0 +1,49 @@
+Linux 解压文件夹下所有压缩包
+
+2020-06-04 17:06:25 发布 4316
+
+
+    循环文件夹下所有压缩包
+for i in $(ls *.gz);do tar zxvf $i;done
+
+
+    深度搜索子文件夹下压缩文件
+find -maxdepth 1 -name "*.gz"|xargs -i tar zxvf {}
+
+其中1代表在当前文件夹所有，2表示下层文件夹，依次类推
+
+
+
+find -maxdepth 1 -name "*.zip"|xargs -i 7z x -p070337 {}
+for i in $(ls *.zip);do 7z x -p070337 $i;done
+
+
+
+
+
+linux 命令行下批量解压当前目录下的所有zip文件到指定目录
+2022-12-02 13:57:04 修改 2367
+
+
+    常用linux 操作之 linux 批量解压当前目录下的所有zip文件到指定目录
+
+常用linux 操作之 linux 批量解压当前目录下的所有zip文件到指定目录
+
+    所有以zip结尾的文件解压到当前文件夹
+
+for i in `find . -name "*.zip" -type f`; do unzip $i -d ./ ; done
+
+    所有以zip结尾的文件解压到当前文件夹的下一级（以该zip文件名命名的文件夹）
+for i in `find . -name "*.zip" -type f`; do mkdir ${i//.zip}  ; unzip $i -d ./${i//.zip} ;  done
+
+
+在这里插入图片描述
+
+参考链接
+[1]:https://www.yisu.com/zixun/671146.html
+[2]:https://www.php.cn/linux-486665.html#:~:text=%E5%9C%A8linux%E4%B8%AD%EF%BC%8Cfor%E5%91%BD%E4%BB%A4%E7%94%A8%E4%BA%8E%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%BE%AA%E7%8E%AF%EF%BC%8C%E8%AF%A5%E5%BE%AA%E7%8E%AF%E9%80%9A%E8%BF%87%E4%B8%80%E7%B3%BB%E5%88%97%E5%80%BC%E7%9A%84%E5%BE%AA%E7%8E%AF%E6%9D%A5%E4%BD%BF%E7%94%A8%E7%B3%BB%E5%88%97%E4%B8%AD%E7%9A%84%E4%B8%80%E4%B8%AA%E5%91%BD%E4%BB%A4%E9%9B%86%EF%BC%8C%E8%AF%AD%E6%B3%95%E4%B8%BA%E2%80%9Cfor%20%E5%8F%98%E9%87%8F%E5%90%8D%20in,%E5%80%BC%E5%88%97%E8%A1%A8%20do%20%E5%91%BD%E4%BB%A4%E5%BA%8F%E5%88%97%20done%E2%80%9D%E3%80%82
+
+
+
+
+

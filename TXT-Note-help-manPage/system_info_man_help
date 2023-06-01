@@ -82,8 +82,20 @@ sudo apt-get install p7zip-full
 7z  x  -pPASSWORD  your-file.zip
 
 
+======================================
+
+ps -a | grep taskname | awk 'NF=1' | xargs kill -9
+
+
+awk 'NR==1’表示取第一行，然后将取出的结果给kill 
+awk 'NF=1’这时候表示取第一列，所以就是输出PID
+
 
 
 
 ======================================
 
+
+
+
+======================================
