@@ -376,3 +376,5 @@ nmcli w3 show
 iwctl
 iw
 nmtui
+ ps -a | grep Fvwm | cut -c 1-8
+ 

@@ -1,0 +1,311 @@
+git
+sudo apt-get install git
+git
+git config --global user.email "freetug@163.com"
+git config --global user.name "freetug"
+git config --list
+cd gitFreetug/
+git -help
+cd gitFreetug/
+git version
+git init
+ssh git@github.com
+git clone https://github.com/freetug/zhdebian.git
+cp ~/.fvwm/.fvwm2rc ~/gitFreetug/zhdebian/
+git push
+git add .fvwm2rc
+git add ./.fvwm2rc
+git add ./zhdebian/.fvwm2rc
+git push
+git push https://github.com/freetug/zhdebian.git
+git commit
+git add ./zhdebian/.fvwm2rc
+git staturs
+git status
+git add
+git add .
+git rm --cached zhdebian
+git commit
+git commit -m "how to use this command?"
+git status
+git commit -a
+git add .
+git commit
+git restore .
+git status
+git push origin master
+git add ./zhdebian/.fvwm2rc 
+git add ./zhdebian/.fvwm2rc 
+git add .fvwm2rc 
+git status
+git rm -r --cached zhdebian
+git rm -r --cached zhdebian
+git add zhdebian
+git status
+git commit
+git commit -m "Rest Local Repo"
+git push origin master
+git push origin main
+git remote -v
+git remote add origin git@github.com:freetug/zhdebian.git
+git push origin main
+git push origin master
+git push origin main
+git remote -v
+git push -u origin master
+git remote rm origin
+git remote -v
+git push -u origin master
+git remote add origin git@github.com:freetug/zhdebian.git
+git push -u origin master
+git brunch
+git branch
+cd gitFreetug/
+git branch
+git branch
+git checout
+git checkout
+git commit
+git push
+git push -u origin main
+git remote add origin 
+git branch
+$ git push origin --delete master
+git push origin --delete master
+git init
+git remote add origin https://github.com/freetug/zhdebian.git
+git init
+git config --global init.defaultBranch main
+git branch
+git config --list
+git remote add origin https://github.com/freetug/zhdebian.git
+git add .
+git commit
+git commit -m "upload .fvwm2rc and the .fvwm folder. 30-jun-21"
+git push -u origin main
+git branch
+git branch -m master main
+git branch
+git status
+git fetch origin
+git status
+git remote
+git add .
+git commit -m "upload .fvwm2rc and the .fvwm folder. 30-jun-21"
+git add *
+git add .
+git remote
+git add 
+git add .
+git add .
+git config --list
+git push -u origin
+git push -u origin main
+git pull 
+git branch --set-upstream-to=origin/zhdebian main
+git push -u
+git push --set-upstream origin main
+git clone https://github.com/freetug/zhdebian.git
+git status
+git pull remote main
+git pull  main
+git branch
+git remote
+git remote -v
+git add .
+git commit -m "upload .fvwm2rc and the .fvwm folder. 30-jun-21"
+cd gitFreetug/
+git add *
+git commit -m "upload fvwm conf folder"
+git add .
+git commit -m "upload fvwm conf folder"
+git push
+cd gitFreetug/
+git add .
+git config --list
+ssh -T git@github.com
+git pull
+git fetch --all &&  git reset --hard origin/main && git pull
+git add .
+git add *
+git add .
+git push
+git branch
+git branch -v
+git remote add origin main
+git remote
+git remote -v
+git push -u origin main
+git remote -v
+git remote rm origin
+git remote -v
+git remote add git@github.com:freetug/zhdebian.git
+git remote add -m git@github.com:freetug/zhdebian.git
+git remote add origin git@github.com:freetug/zhdebian.git
+git add .
+git push
+git remote -v
+git remote
+git push -u origin main
+git add .
+git add .
+rm -f ./.git/index.lock
+git add .
+cd gitFreetug/
+cd gitFreetug/
+git add .
+git rm --cached .fvwm
+git rm -r --cached .fvwm
+git add .
+git diff
+git branch
+git checkout main
+git add .
+git commit
+git commit -m "upload .fvwm2rc and the .fvwm folder. 30-jun-21"
+git push
+git add .
+git status
+git commit -m "add my git-study-note"
+git push
+git add .
+git commit -m "add a folder to contain the git-study-note"
+git push
+git add .
+git commit -m "add a folder to contain the git-study-note"
+git push
+git add .
+git commit -m "create a conf folder to contain conf file."
+git push
+git add .
+git commit -m "update the conf folder."
+git push
+git add .
+git commit -m "add note folder."
+git push
+cd gitFreetug/
+git add .
+git commit -m "changed a few line in .fvwm2rc"
+git push
+git add .
+git commit -m "changed a few line in .fvwm2rc"
+git push
+git add .
+git commit -m "changed a few lines in .fvwm2rc"
+git push
+cd gitFreetug/
+git add .
+git commit -m "add pigz and tar"
+git push
+cd gitFreetug/
+git add .
+git commit "add chromium icon"
+git commit -t "add chromium icon"
+git commit -m "add chromium icon"
+git add .
+git commit -m "add chromium icon"
+git add .
+git commit -m "add chromium icon"
+git push
+wget https://mika-cn.github.io/maoxian-web-clipper/extension/0.1.78/maoxian-web-clipper-chrome-0.1.78.crx
+cd gitFreetug/
+git add .
+git commit -m "add lftp usage."
+git push
+git add .
+git commit -m "add howto disable Javascript"
+git push
+cd gitFreetug/
+git add .
+git commit "added audacity and shotcut in menu"
+git commit -m "added audacity and shotcut in menu"
+git push
+cd gitFreetug/
+git add .
+git commit -m "minor changes"
+git push
+cd gitFreetug/
+git add .
+git commit -m "add vscode."
+git push
+cd gitFreetug/
+git add .
+git comment -t "minor change on helpNote"
+git commit -t "minor change on helpNote"
+git commit -m "minor change on helpNote"
+git push
+cd gitFreetug/
+git add .
+git commit "add HKWHMS"
+git commit -t "add HKWHMS"
+git commit -m "add HKWHMS"
+git push
+cd gitFreetug/
+git add.
+git add .
+git commit -m "add something"
+git push
+cd gitFreetug/
+git clone https://github.com/anzhihe/Free-Web-Books  
+git
+git add .
+git add.
+git add
+cd gitFreetug/
+git add.
+git add .
+git rm --cached eBooks
+git add .
+git commit -m "add TSWMS.xlsm"
+git push
+git status
+git push
+git add .
+git commit -m "changed gitHelpBook.txt"
+git push
+git add .
+git commit -m "added ShitoudaoMedic.xlsm"
+git push
+git add .
+git commit -m "added rdesktop.txt"
+git push
+cd gitFreetug/
+git add .
+git commit -m "edited TXT-Note-help-manPage"
+git push
+ssh-keygen -R github.com
+github.com ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCj7ndNxQowgcQnjshcLrqPEiiphnt+VTTvDP6mHBL9j1aNUkY4Ue1gvwnGLVlOhGeYrnZaMgRK6+PKCUXaDbC7qtbW8gIkhL7aGCsOr/C56SJMy/BCZfxd1nWzAOxSDPgVsmerOBYfNqltV9/hWCqBywINIR+5dIg6JTJ72pcEpEjcYgXkE2YEFXV1JHnsKgbLWNlhScqb2UmyRkQyytRLtL+38TGxkxCflmO+5Z8CSSNY7GidjMIZ7Q4zMjA2n1nGrlTDkzwDCsw+wqFPGQA179cnfGWOWRVruj16z6XyvxvjJwbz0wQZ75XK5tKSb7FNyeIEs4TT4jk+S4dhPeAUC5y+bDYirYgM4GC7uEnztnZyaVWQ7B381AK4Qdrwt51ZqExKbQpTUNn+EjqoTwvqNj4kqx5QUCI0ThS/YkOxJCXmPUWZbhjpCg56i+2aB6CmK2JGhn57K5mj0MNdBXA4/WnwH6XoPWJzK5Nyu2zB3nAZp+S5hpQs+p1vN1/wsjk=
+curl -L https://api.github.com/meta | jq -r '.ssh_keys | .[]' | sed -e 's/^/github.com /' >> ~/.ssh/known_hosts
+cd gitFreetug/
+git add.
+git add .
+[200~git comment -m "added TSWMS.xlsm"
+git comment - m "unzip error, use 7z"
+git commit - m "unzip error, use 7z"
+git commit -m "unzip error, use 7z"
+git push
+git status
+git push
+git add .
+git commit -m "add xargs help"
+git push
+git add .
+git commit -m "add vi search trick"
+git push
+cd gitFreetug/
+git add .
+git commit -m "edited man-help"
+git push
+git add .
+git commit -m "edited man-help"
+git push
+git add .
+git commit -m "edited man-help"
+git push
+git add .
+git commit -m "add linux term keyshotcut"
+git push
+cd gitFreetug/
+git add .
+git commit -m "edited linux term keyshotcut"
+git push
