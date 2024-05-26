@@ -260,3 +260,10 @@ ctrl+q: 解冻
 Esc+B:  移动到当前单词的开头
 Esc+F:  移动到当前单词的结尾
 
+
+检查video完整性
+find /dir/subdir -iname "*.mp4" -print0 | while read -d $'\0' file; do ERR=`ffprobe -v error "$file" 2>&1`; if [ "$ERR" != "" ]; then echo "$file"; fi; done
+
+find . -name "*.mp4" -exec sh -c "ffmpeg -v error -i '{}' -map 0:1 -f null - 2>'{}.log'" \;
+
+find . -name "*.mp4" -exec ffmpeg -v error -i "{}" -map 0:1 -f null - 2>error.log \;
