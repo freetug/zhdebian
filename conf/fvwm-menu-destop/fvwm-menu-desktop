@@ -152,9 +152,11 @@ Standard output is a series Fvwm commands."""
     equaled_obs_parms=[]
     for a in obs_parms :
         equaled_obs_parms.append(a+'=')
+        # print("equaled_obs_parms is : ",equaled_obs_parms)
     dashed_obs_parms=[]
     for a in obs_parms :
         dashed_obs_parms.append('--'+a)
+        # print("dashed_obs_parms is : ",dashed_obs_parms)
 
     try:
         opts, args = getopt.getopt(sys.argv[1:], "hs:t:vwe",
@@ -179,8 +181,10 @@ Standard output is a series Fvwm commands."""
     previous_theme='gnome'
     icon_dir="~/.fvwm/icons"
     top='XDGMenu'
-    insert_in_menu =True 
-    #insert_in_menu = False
+
+    # if insert_in_menu is True, then the menus will add on to the previous. There won't be DestoryMenu line.
+    # insert_in_menu =True 
+    insert_in_menu = False
     install_prefix = ''
     menu_type = ''
     with_titles = True
@@ -194,7 +198,7 @@ Standard output is a series Fvwm commands."""
     #default_app_icon = "gnome-applications"
     default_app_icon = "24x24-default.png"
     #default_dir_icon = "gnome-fs-directory"
-    default_dir_icon = "24x24-rox-filer.png"
+    default_dir_icon = "icons/24x24-rox-filer.png"
     include_items = 'both'
     regen_cmd = 'PipeRead `fvwm2-menu-desktop`'
     dynamic_menu = False
@@ -203,9 +207,12 @@ Standard output is a series Fvwm commands."""
 
     # Loads config options from $FVWM_USERDIR/.FvwmForm-XDGMenu-Config
     if "FVWM_USERDIR" in os.environ:
+        # print("os.environ is : ", os.environ)
         config_file = "%s/.FvwmForm-XDGMenu-Config" % os.environ['FVWM_USERDIR']
+        # print ("config_file: ", config_file)
     else:
         config_file = "%s/.fvwm/.FvwmForm-XDGMenu-Config" % os.environ['HOME']
+        # print ("config_file: ", config_file)
     if os.path.isfile(config_file):
         fvwmform_config = open(config_file, "r", errors="ignore")
 
@@ -350,6 +357,7 @@ Standard output is a series Fvwm commands."""
             # check if $XDG_MENU_PREFIX is set
             if not xdg_menu_prefix == '':
                 desktop = xdg_menu_prefix.replace('-', '').lower()
+                print("desktop: ", desktop)
         
         vprint("Parameters for creating menu list:")
         vprint(" XDG_MENU_PREFIX:  \'%s\'" %xdg_menu_prefix)
@@ -364,8 +372,11 @@ Standard output is a series Fvwm commands."""
 
     else:
         menulist = set_menus
+        # print("menulist: ",menulist)
+
     
     vprint(" Menu list: %s\n" %menulist)
+    # print(" Menu list: %s\n" %menulist)
     menu_list_length =  len(menulist)       
         
     if menu_list_length == 0:
@@ -411,21 +422,27 @@ def getmenulist(desktop, menu_type):
     for dir in config_dirs:
         if install_prefix == '':
             dir = os.path.join(dir, 'menus')
+            # print("dir is: ",dir)
         # skipping all paths which not available
         if os.path.exists(dir):
             filelist = set([])
             dir_list = os.listdir(dir)
+            # print("filelist: ",filelist)
+            # print("dir_list: ",dir_list)
             #pattern = '*'+desktop+'*'+menu_type+'*.menu'
             # Always find all menus
             pattern = '*.menu'
             for filename in fnmatch.filter(dir_list, pattern):
                 filelist.add(filename)
+                # print("filelist",filelist)
+                # print("filename",filename)
             
             # the menudict dictionary has a unsorted list (set) for the values.
             # set is easier to use then a list for removing items 
             menudict[dir] = filelist
             found_menus += len(filelist)
             vprint(" found in %s: %s" %(dir, list(filelist)))
+            # print(" found in %s: %s" %(dir, list(filelist)))
     
     desktop_dict = {}
     if not found_menus == 0:
@@ -677,7 +694,7 @@ def parsemenus(menulist, desktop):
         for title, menu in zip(top_titles, menulist):
             name = 'Fvwm'+title
             vprint("Create submenu \'%s\' from \'%s\'" %(name, menu))
-            parsemenu(xdg.Menu.parse(menu), name, title)
+            ##### parsemenu(xdg.Menu.parse(menu), name, title)
             # remove a menu if no menu entry was created in its sub menus
             if not menu_entry_count == 0:
                 new_toptitles.append(title)
@@ -737,15 +754,33 @@ def parsemenu(menu, name="", title=""):
     for entry in menu.getEntries():
         if isinstance(entry, xdg.Menu.Menu):
             if printmode:
-                printmenu(entry.getName(), entry.getIcon(), 'Popup "%s"' % entry.getPath())
+                # check if the default icon exists or not, set it if not
+                dirIcon = entry.getIcon()
+                if not dirIcon or not os.path.exists(dirIcon):
+                    # dirIcon = default_dir_icon 
+                    dirIcon = "icons/24x24-program.png" 
+                    # print("dirIcon is: ",dirIcon)
+                # printmenu(entry.getName(), entry.getIcon(), 'Popup "%s"' % entry.getPath())
+                printmenu(entry.getName(), dirIcon, 'Popup "%s"' % entry.getPath())
         elif isinstance(entry, xdg.Menu.MenuEntry):
             if printmode:
                 desktop = DesktopEntry(entry.DesktopEntry.getFileName())
                 # eliminate '%U' etc behind execute string
                 execProgram = m.sub('', desktop.getExec())
+                # print("execProgram is: ", execProgram  )
                 if desktop.getTerminal():
                     execProgram = "%s %s" % (term_cmd, execProgram)
-                printmenu(desktop.getName(), desktop.getIcon(), "Exec exec " + execProgram)
+
+                # print("execProgram is: ", execProgram  )
+
+                # check if the default icon exists or not, set it if not
+                appIcon = desktop.getIcon()
+                # print("appIcon is: ", appIcon)
+                # if not appIcon or not os.path.exists(appIcon):
+                # if not os.path.exists(appIcon):
+                   # appIcon = "icons/24x24-default.png" 
+                # printmenu(desktop.getName(), desktop.getIcon(), "Exec exec " + execProgram)
+                printmenu(desktop.getName(), appIcon, "Exec exec " + execProgram)
             menu_entry_count += 1
         elif isinstance(entry, xdg.Menu.Separator):
             if printmode:
@@ -759,9 +794,11 @@ def parsemenu(menu, name="", title=""):
         if menu_list_length == 1 and name == top and include_items != 'none':
             printtext('+ "" Nop')
             if include_items in ("both", "regenerate"):
-                printmenu("$[gt.Regenerate]", "system-software-update", regen_cmd )
+                # printmenu("$[gt.Regenerate]", "system-software-update", regen_cmd )
+                printmenu("$[gt.Regenerate]", dirIcon, regen_cmd )
             if include_items in ("both", "config"):
-                printmenu("$[gt.Configure]", "system-software-update", "Module FvwmPerl -l fvwm-menu-desktop-config.fpl" )
+                # printmenu("$[gt.Configure]", "system-software-update", "Module FvwmPerl -l fvwm-menu-desktop-config.fpl" )
+                printmenu("$[gt.Configure]", dirIcon, "Module FvwmPerl -l fvwm-menu-desktop-config.fpl" )
         printtext('')
 
     for entry in menu.getEntries():
