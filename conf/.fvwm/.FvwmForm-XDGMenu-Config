@@ -1,0 +1,19 @@
+# This file last created by FvwmForm-XDGMenu-Config on: Sat Jun 22 12:34:16 PM CST 2024.
+*FvwmForm-XDGMenu-ConfigDefault: MENlxde-applications  
+*FvwmForm-XDGMenu-ConfigDefault: IncludeConfig  
+*FvwmForm-XDGMenu-ConfigDefault: IncludeRegen  
+*FvwmForm-XDGMenu-ConfigDefault: IncludeBoth  on 
+*FvwmForm-XDGMenu-ConfigDefault: IncludeNone   
+*FvwmForm-XDGMenu-ConfigDefault: IconsOn      on 
+*FvwmForm-XDGMenu-ConfigDefault: IconsOff      
+*FvwmForm-XDGMenu-ConfigDefault: Size         24     
+*FvwmForm-XDGMenu-ConfigDefault: TitlesOn     on 
+*FvwmForm-XDGMenu-ConfigDefault: TitlesOff     
+*FvwmForm-XDGMenu-ConfigDefault: Theme         
+*FvwmForm-XDGMenu-ConfigDefault: Title        XDGMenu     
+*FvwmForm-XDGMenu-ConfigDefault: InsertInto    
+*FvwmForm-XDGMenu-ConfigDefault: Path         $FVWM_USERDIR/.XDGMenu     
+*FvwmForm-XDGMenu-ConfigDefault: TermCmd      xterm -e     
+*FvwmForm-XDGMenu-ConfigDefault: IconDir      ~/.fvwm/icons     
+*FvwmForm-XDGMenu-ConfigDefault: DirIcon      24x24-rox-filer.png     
+*FvwmForm-XDGMenu-ConfigDefault: AppIcon      24x24-default.png    

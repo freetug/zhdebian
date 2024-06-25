@@ -58,7 +58,7 @@ AddToFunc   StartFunction
 + I Test (Init, f $[FVWM_USERDIR]/.BGdefault) \
     Exec exec fvwm-root $[FVWM_USERDIR]/.BGdefault
 + I TestRc (NoMatch) Exec exec fvwm-root \
-    $[FVWM_DATADIR]/default-config/images/background/bg4.png
+    $[FVWM_DATADIR]/default-config/images/background/bg3.png
 #+ I Test (Init) Module FvwmBanner
 + I Module FvwmButtons BottomPanel
 + I Module FvwmButtons ButtonTrayPanel
@@ -68,11 +68,17 @@ AddToFunc   StartFunction
 #+ I Exec exec xclock -digital -twentyfour -geometry 200x18-10+170 -d -strftime '%a, %d %b %G'
 # for info, man -strftime
 
+#+ I Exec exec copyq 
++ I Exec exec diodon 
++ I Exec exec pcmanfm
++ I Exec exec xterm 
++ I Exec exec xterm 
+
 ## 鼠标在窗口上超过3000毫秒自动提升
 + I Module FvwmAuto 3000 Raise Nop
 
 
-# Mouse Bindings Functions
+
 DestroyFunc RaiseMoveX
 AddToFunc RaiseMoveX
 + I Raise
@@ -171,8 +177,9 @@ AddToFunc   ChangeDesk
 #
 DesktopName 0 M
 DesktopName 1 D1
-#DesktopName 2 D2
-#DesktopName 3 D3
+DesktopName 2 D2
+DesktopName 3 D3
+# DesktopSize : 2x1 means 1 desktop has 2 screens. 
 DesktopSize 2x1
 
 # EdgeScroll will move the view port between the Pages when the mouse
@@ -409,6 +416,7 @@ Test (x code) + "Visual Studio Code%icons/24x24-vscode.png%" Exec exec code
 Test (x geany) + "Geany &Txt%icons/24x24-geany.png%" Exec exec geany
 Test (x rox) + "&Rox Filer%icons/24x24-rox-filer.png%" Exec exec rox
 Test (x xfe) + "xfe Filer%icons/24x24-xfe.png%" Exec exec xfe
+Test (x copyq) + "CopyQ%icons/24x24-copyq.png%" Exec exec copyq 
 Test (x catfish)  + "Catfi&sh%icons/24x24-catfish.png%" Exec exec catfish 
 Test (x pcmanfm) + "Pcman &File Manager%icons/24x24-pcmanfm.png%" Exec exec pcmanfm
 #Test (x caja) + "Caja File Manager" Exec exec caja
@@ -468,6 +476,7 @@ Test (x code) + "Visual Studio Code%icons/24x24-vscode.png%" Exec exec code
 Test (x geany) + "Geany Txt%icons/24x24-geany.png%" Exec exec geany
 Test (x rox) + "Rox Filer%icons/24x24-rox-filer.png%" Exec exec rox
 Test (x xfe) + "xfe Filer%icons/24x24-xfe.png%" Exec exec xfe
+Test (x copyq) + "CopyQ%icons/24x24-copyq.png%" Exec exec copyq 
 #Test (x caja) + "Caja File Manager" Exec exec caja
 Test (x catfish)  + "Catfish%icons/24x24-catfish.png%" Exec exec catfish 
 Test (x mate-screenshot) + "Mate-Screenshot%icons/24x24-mate-screenshot.png%" Exec exec mate-screenshot -i
@@ -690,6 +699,8 @@ Silent Key t A M Exec exec $[infostore.terminal]
 # Alt + M 弹出程序菜单
 Silent Key M A M Menu MenuPrograms Root c c 
 
+#Press PrtSc key to screen-snapshot(exec scrot)
+Silent Key Print A A Exec exec scrot
 
 #############begin:拷贝过来的，Alt+F4关闭窗口#####
 #   press Alt-F4 to close the window

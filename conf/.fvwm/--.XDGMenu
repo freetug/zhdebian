@@ -1,0 +1,113 @@
+DestroyMenu "XDGMenu"
+AddToMenu "XDGMenu" "XDGMenu" Title
++ "Accessories%icons/24x24-app.png%" Popup "Accessories"
++ "Education%icons/24x24-app.png%" Popup "Education"
++ "Games%icons/24x24-app.png%" Popup "Games"
++ "Graphics%icons/24x24-app.png%" Popup "Graphics"
++ "Internet%icons/24x24-app.png%" Popup "Internet"
++ "Office%icons/24x24-app.png%" Popup "Office"
++ "Programming%icons/24x24-app.png%" Popup "Programming"
++ "Sound & Video%icons/24x24-app.png%" Popup "Sound & Video"
++ "System Tools%icons/24x24-app.png%" Popup "System Tools"
++ "" Nop
++ "Preferences%preferences-desktop%" Popup "Preferences"
++ "" Nop
++ "$[gt.Regenerate]%system-software-update%" PipeRead `fvwm-menu-desktop`
++ "$[gt.Configure]%system-software-update%" Module FvwmPerl -l fvwm-menu-desktop-config.fpl
+
+DestroyMenu "Accessories"
+AddToMenu "Accessories" "Accessories" Title
++ "Catfish File Search%/home/ml/.fvwm/icons/24x24-org.xfce.catfish.png%" Exec exec /usr/bin/catfish 
++ "CopyQ%/usr/share/icons/hicolor/24x24/apps/copyq.png%" Exec exec copyq
++ "Diodon%/usr/share/icons/hicolor/24x24/apps/diodon.svg%" Exec exec diodon 
++ "KeePass2%/home/ml/.fvwm/icons/24x24-keepass2.png%" Exec exec keepass2 
++ "ScrcpyGui%/home/ml/.fvwm/icons/24x24-scrcpy-gui.png%" Exec exec "/opt/ScrcpyGui/scrcpy-gui" 
++ "SpeedCrunch%/home/ml/.fvwm/icons/24x24-speedcrunch.png%" Exec exec speedcrunch
++ "Vim%/home/ml/.fvwm/icons/24x24-gvim.png%" Exec exec xterm -e    vim 
++ "Xarchiver%/usr/share/icons/hicolor/24x24/apps/xarchiver.png%" Exec exec xarchiver 
+
+DestroyMenu "Education"
+AddToMenu "Education" "Education" Title
++ "GoldenDict%/home/ml/.fvwm/icons/24x24-goldendict.png%" Exec exec goldendict
++ "Jupyter Notebook%/home/ml/.fvwm/icons/24x24-notebook.png%" Exec exec xterm -e    jupyter-notebook 
+
+DestroyMenu "Games"
+AddToMenu "Games" "Games" Title
++ "NetHack (No GUI)%/home/ml/.fvwm/icons/24x24-nethack.png%" Exec exec xterm -e    /usr/games/nethack-console
++ "Pingus%/home/ml/.fvwm/icons/24x24-pingus-icon.png%" Exec exec pingus
++ "SuperTux 2%/home/ml/.fvwm/icons/24x24-supertux2.png%" Exec exec supertux2
+
+DestroyMenu "Graphics"
+AddToMenu "Graphics" "Graphics" Title
++ "Color picker%/home/ml/.fvwm/icons/24x24-nl.hjdskes.gcolor3.png%" Exec exec gcolor3
++ "Flameshot%/home/ml/.fvwm/icons/24x24-org.flameshot.Flameshot.png%" Exec exec /usr/bin/flameshot
++ "GNU Image Manipulation Program%/usr/share/icons/hicolor/24x24/apps/gimp.png%" Exec exec gimp-2.10 
++ "Gpick%/home/ml/.fvwm/icons/24x24-gpick.png%" Exec exec gpick 
++ "ImageMagick (color depth=q16)%/home/ml/.fvwm/icons/24x24-display-im6.q16.png%" Exec exec /usr/bin/display-im6.q16 -nostdin 
++ "Inkscape%/usr/share/icons/hicolor/24x24/apps/org.inkscape.Inkscape.png%" Exec exec inkscape 
++ "LibreOffice Draw%/usr/share/icons/hicolor/24x24/apps/libreoffice-draw.png%" Exec exec libreoffice --draw 
++ "Mirage%/home/ml/.fvwm/icons/24x24-mirage.png%" Exec exec mirage 
++ "XnView Multi Platform%/home/ml/.fvwm/icons/24x24-xnview.png%" Exec exec xnview 
++ "xpdf%/home/ml/.fvwm/icons/24x24-xpdf.png%" Exec exec xpdf 
+
+DestroyMenu "Internet"
+AddToMenu "Internet" "Internet" Title
++ "Chromium Web Browser%/home/ml/.fvwm/icons/24x24-chromium.png%" Exec exec /usr/bin/chromium 
++ "Firefox ESR%/home/ml/.fvwm/icons/24x24-firefox-esr.png%" Exec exec /usr/lib/firefox-esr/firefox-esr 
++ "Gajim%/home/ml/.fvwm/icons/24x24-org.gajim.Gajim.png%" Exec exec gajim 
++ "Pidgin Internet Messenger%/usr/share/icons/hicolor/24x24/apps/pidgin.png%" Exec exec pidgin
++ "Remmina%/usr/share/icons/hicolor/24x24/apps/org.remmina.Remmina.png%" Exec exec remmina-file-wrapper 
++ "Tor Browser%/home/ml/.fvwm/icons/24x24-torbrowser.png%" Exec exec torbrowser-launcher 
++ "Tor Browser Launcher Settings%/home/ml/.fvwm/icons/24x24-torbrowser.png%" Exec exec torbrowser-launcher --settings
++ "Wireshark%/usr/share/icons/hicolor/24x24/apps/wireshark.png%" Exec exec wireshark 
++ "lftp%/home/ml/.fvwm/icons/24x24-lftp-icon.png%" Exec exec xterm -e    lftp
++ "mutt%/home/ml/.fvwm/icons/24x24-mutt.png%" Exec exec xterm -e    mutt 
++ "qBittorrent%/home/ml/.fvwm/icons/24x24-qbittorrent.png%" Exec exec qbittorrent 
+
+DestroyMenu "Office"
+AddToMenu "Office" "Office" Title
++ "Atril Document Viewer%/usr/share/icons/hicolor/24x24/apps/atril.png%" Exec exec atril 
++ "GoldenDict%/home/ml/.fvwm/icons/24x24-goldendict.png%" Exec exec goldendict
++ "LibreOffice%/usr/share/icons/hicolor/24x24/apps/libreoffice-startcenter.png%" Exec exec libreoffice 
++ "LibreOffice Base%/usr/share/icons/hicolor/24x24/apps/libreoffice-base.png%" Exec exec libreoffice --base 
++ "LibreOffice Calc%/usr/share/icons/hicolor/24x24/apps/libreoffice-calc.png%" Exec exec libreoffice --calc 
++ "LibreOffice Draw%/usr/share/icons/hicolor/24x24/apps/libreoffice-draw.png%" Exec exec libreoffice --draw 
++ "LibreOffice Impress%/usr/share/icons/hicolor/24x24/apps/libreoffice-impress.png%" Exec exec libreoffice --impress 
++ "LibreOffice Math%/usr/share/icons/hicolor/24x24/apps/libreoffice-math.png%" Exec exec libreoffice --math 
++ "LibreOffice Writer%/usr/share/icons/hicolor/24x24/apps/libreoffice-writer.png%" Exec exec libreoffice --writer 
++ "mutt%/home/ml/.fvwm/icons/24x24-mutt.png%" Exec exec xterm -e    mutt 
+
+DestroyMenu "Programming"
+AddToMenu "Programming" "Programming" Title
++ "Geany%/home/ml/.fvwm/icons/24x24-geany.png%" Exec exec geany 
++ "Jupyter Notebook%/home/ml/.fvwm/icons/24x24-notebook.png%" Exec exec xterm -e    jupyter-notebook 
++ "Poedit%/usr/share/icons/hicolor/24x24/apps/net.poedit.Poedit.png%" Exec exec poeditor 
++ "Visual Studio Code%/home/ml/.fvwm/icons/24x24-vscode.png%" Exec exec /usr/share/code/code --unity-launch 
++ "electron-ssr%/usr/share/icons/hicolor/24x24/apps/electron-ssr.png%" Exec exec "/opt/electron-ssr/electron-ssr" 
+
+DestroyMenu "Sound & Video"
+AddToMenu "Sound & Video" "Sound & Video" Title
++ "Audacity%/home/ml/.fvwm/icons/24x24-audacity.png%" Exec exec env UBUNTU_MENUPROXY=0 GDK_BACKEND=x11 audacity 
++ "Gnome Subtitles%/home/ml/.fvwm/icons/24x24-gnome-subtitles.png%" Exec exec gnome-subtitles 
++ "SMPlayer%/home/ml/.fvwm/icons/24x24-smplayer.png%" Exec exec smplayer 
++ "Shotcut%/home/ml/.fvwm/icons/24x24-org.shotcut.Shotcut.png%" Exec exec shotcut 
++ "VLC media player%/home/ml/.fvwm/icons/24x24-vlc.png%" Exec exec /usr/bin/vlc --started-from-file 
++ "mpv Media Player%/home/ml/.fvwm/icons/24x24-mpv.png%" Exec exec mpv --player-operation-mode=pseudo-gui -- 
+
+DestroyMenu "System Tools"
+AddToMenu "System Tools" "System Tools" Title
++ "Fcitx%/usr/share/icons/hicolor/24x24/apps/fcitx.png%" Exec exec fcitx
++ "File Manager PCManFM%system-file-manager%" Exec exec pcmanfm 
++ "Hardware Locality lstopo" Exec exec lstopo
++ "Htop%/home/ml/.fvwm/icons/24x24-htop.png%" Exec exec xterm -e    htop
++ "UXTerm%/home/ml/.fvwm/icons/24x24-mini.xterm.png%" Exec exec uxterm
++ "XTerm%/home/ml/.fvwm/icons/24x24-mini.xterm.png%" Exec exec xterm
++ "ranger%utilities-terminal%" Exec exec xterm -e    ranger
+
+DestroyMenu "Preferences"
+AddToMenu "Preferences" "Preferences" Title
++ "Desktop Preferences%user-desktop%" Exec exec pcmanfm --desktop-pref
++ "Fcitx Configuration%/usr/share/icons/hicolor/24x24/apps/fcitx.png%" Exec exec fcitx-configtool
++ "Input Method%input-keyboard%" Exec exec im-config
++ "Print Settings%printer%" Exec exec system-config-printer
+
